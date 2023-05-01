@@ -1,4 +1,0 @@
-CMake Error at CMakeLists.txt:20 (rosidl_generate_interfaces):
-  Unknown CMake command "rosidl_generate_interfaces".
-
-

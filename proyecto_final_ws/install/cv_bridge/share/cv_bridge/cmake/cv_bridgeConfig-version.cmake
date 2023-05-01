@@ -1,1 +1,0 @@
-/home/snowartz/proyecto_final_ws/build/cv_bridge/ament_cmake_core/cv_bridgeConfig-version.cmake

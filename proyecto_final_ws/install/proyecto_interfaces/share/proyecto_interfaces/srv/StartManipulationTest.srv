@@ -1,4 +1,0 @@
-string platform
-int32 x
----
-string answer
