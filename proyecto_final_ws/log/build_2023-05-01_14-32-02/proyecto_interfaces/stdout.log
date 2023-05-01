@@ -1,0 +1,4 @@
+-- Found ament_cmake: 0.9.11 (/home/snowartz/ros2_foxy/install/ament_cmake/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/home/snowartz/proyecto_final_ws/build/proyecto_interfaces/CMakeFiles/CMakeOutput.log".

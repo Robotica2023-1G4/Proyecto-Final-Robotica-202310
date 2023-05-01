@@ -1,0 +1,1 @@
+/home/snowartz/proyecto_final_ws/src/vision_opencv/cv_bridge/include/cv_bridge/rgb_colors.h

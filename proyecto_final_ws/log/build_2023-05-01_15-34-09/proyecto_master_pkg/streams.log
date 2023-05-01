@@ -1,0 +1,24 @@
+[2.403s] Invoking command in '/home/snowartz/proyecto_final_ws/src/proyecto_master_pkg': PYTHONPATH=/home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/prefix_override:/home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/proyecto_master_pkg build --build-base /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/build install --record /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
+[3.331s] running egg_info
+[3.332s] writing ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/PKG-INFO
+[3.332s] writing dependency_links to ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/dependency_links.txt
+[3.333s] writing entry points to ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/entry_points.txt
+[3.333s] writing requirements to ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/requires.txt
+[3.333s] writing top-level names to ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/top_level.txt
+[3.389s] reading manifest file '../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+[3.390s] writing manifest file '../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+[3.390s] running build
+[3.390s] running build_py
+[3.390s] copying proyecto_master_pkg/master.py -> /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/build/lib/proyecto_master_pkg
+[3.390s] running install
+[3.394s] running install_lib
+[3.395s] copying /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/master.py -> /home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages/proyecto_master_pkg
+[3.399s] byte-compiling /home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages/proyecto_master_pkg/master.py to master.cpython-38.pyc
+[3.402s] running install_data
+[3.403s] running install_egg_info
+[3.407s] removing '/home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages/proyecto_master_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[3.408s] Copying ../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info to /home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages/proyecto_master_pkg-0.0.0-py3.8.egg-info
+[3.409s] running install_scripts
+[3.449s] Installing master script to /home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[3.450s] writing list of installed files to '/home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/install.log'
+[3.484s] Invoked command in '/home/snowartz/proyecto_final_ws/src/proyecto_master_pkg' returned '0': PYTHONPATH=/home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/prefix_override:/home/snowartz/proyecto_final_ws/install/proyecto_master_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/proyecto_master_pkg build --build-base /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/build install --record /home/snowartz/proyecto_final_ws/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
