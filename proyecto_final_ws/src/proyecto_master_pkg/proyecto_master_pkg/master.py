@@ -7,6 +7,7 @@ from proyecto_interfaces.msg import Banner
 from proyecto_interfaces.srv import StartNavigationTest
 from proyecto_interfaces.srv import StartPerceptionTest
 from proyecto_interfaces.srv import StartManipulationTest
+import threading
 
 class Master(Node):
     def __init__(self) -> None:
@@ -19,7 +20,6 @@ class Master(Node):
             self.subscribers.append(subscriber)
 
         self.publisher_ = self.create_publisher(Image, '/map/camera_1', 10)
-        self.timer = self.create_timer(0.1, self.timer_callback)
 
         self.bridge = CvBridge()
         self.cap = cv2.VideoCapture(0)
@@ -27,6 +27,9 @@ class Master(Node):
         if not self.cap.isOpened():
             self.get_logger().error("Unable to open camera.")
             exit(1)
+
+        self.timer_thread = threading.Thread(target=self.timer_callback)
+        self.timer_thread.start()
 
         while(True):
             self.get_logger().info('Choose a group to start the test (1-15):')
@@ -62,12 +65,13 @@ class Master(Node):
                         self.call_manipulation_test_srv(group, platform, x)
 
     def timer_callback(self):
-        ret, frame = self.cap.read()
-        if not ret:
-            self.get_logger().error("Failed to capture frame from camera.")
-            return
-        image_msg = self.bridge.cv2_to_imgmsg(frame, "bgr8")
-        self.publisher_.publish(image_msg)
+        while True:
+            ret, frame = self.cap.read()
+            if not ret:
+                self.get_logger().error("Failed to capture frame from camera.")
+                return
+            image_msg = self.bridge.cv2_to_imgmsg(frame, "bgr8")
+            self.publisher_.publish(image_msg)
 
     def vision_callback(self, msg):
         self.get_logger().info(f'banner: {msg.banner}, figure: {msg.figure}, word: {msg.word}, color: {msg.color}')
@@ -76,7 +80,9 @@ class Master(Node):
         self.navigation_client = self.create_client(StartNavigationTest, '/group_'+str(group)+'/start_navigation_test_srv')
         while not self.navigation_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
-        self.req = StartNavigationTest.srv.Request(x_coordinate, y_coordiante)
+        self.req = StartNavigationTest.Request()
+        self.req.x = x_coordinate
+        self.req.y = y_coordiante
         self.future = self.navigation_client.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
@@ -85,7 +91,9 @@ class Master(Node):
         self.perception_client = self.create_client(StartPerceptionTest, '/group_'+str(group)+'/start_perception_test_srv')
         while not self.perception_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
-        self.req = StartPerceptionTest.srv.Request(banner_a, banner_b)
+        self.req = StartPerceptionTest.Request()
+        self.req.banner_a = banner_a
+        self.req.banner_b = banner_b
         self.future = self.perception_client.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
@@ -94,7 +102,9 @@ class Master(Node):
         self.manipulation_client = self.create_client(StartManipulationTest, '/group_'+str(group)+'/start_manipulation_test_srv')
         while not self.manipulation_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
-        self.req = StartManipulationTest.srv.Request(platform, x)
+        self.req = StartManipulationTest.Request()
+        self.req.platform = platform
+        self.req.x = x
         self.future = self.manipulation_client.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
