@@ -21,12 +21,12 @@ class Master(Node):
 
         self.publisher_ = self.create_publisher(Image, '/map/camera_1', 10)
 
-        self.bridge = CvBridge()
-        self.cap = cv2.VideoCapture(0)
+        #self.bridge = CvBridge()
+        #self.cap = cv2.VideoCapture(0)
 
-        if not self.cap.isOpened():
-            self.get_logger().error("Unable to open camera.")
-            exit(1)
+        #if not self.cap.isOpened():
+        #    self.get_logger().error("Unable to open camera.")
+        #    exit(1)
 
         self.timer_thread = threading.Thread(target=self.timer_callback)
         self.timer_thread.start()
@@ -65,13 +65,14 @@ class Master(Node):
                         self.call_manipulation_test_srv(group, platform, x)
 
     def timer_callback(self):
-        while True:
-            ret, frame = self.cap.read()
-            if not ret:
-                self.get_logger().error("Failed to capture frame from camera.")
-                return
-            image_msg = self.bridge.cv2_to_imgmsg(frame, "bgr8")
-            self.publisher_.publish(image_msg)
+        hola = 0
+        #while True:
+            #ret, frame = self.cap.read()
+            #if not ret:
+            #    self.get_logger().error("Failed to capture frame from camera.")
+            #    return
+            #image_msg = self.bridge.cv2_to_imgmsg(frame, "bgr8")
+            #self.publisher_.publish(image_msg)
 
     def vision_callback(self, msg):
         self.get_logger().info(f'banner: {msg.banner}, figure: {msg.figure}, word: {msg.word}, color: {msg.color}')

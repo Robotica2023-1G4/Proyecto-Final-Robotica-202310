@@ -20,6 +20,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': ['master = proyecto_master_pkg.master:main',
+                            'navigation = proyecto_master_pkg.navigation_test:main',
+                            'manipulation = proyecto_master_pkg.manipulation_test:main',
+                            'perception = proyecto_master_pkg.perception_test:main',
+                            'control = proyecto_master_pkg.robot_controller',
         ],
     },
 )

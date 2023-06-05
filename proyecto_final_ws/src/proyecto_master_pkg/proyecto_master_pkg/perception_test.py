@@ -2,6 +2,8 @@ import rclpy
 import time
 from rclpy.node import Node
 from proyecto_interfaces.srv import StartPerceptionTest
+from geometry_msgs.msg import Twist
+from proyecto_interfaces.msg import Banner
 import pytesseract
 import cv2
 import numpy as np
@@ -132,7 +134,7 @@ class Perception_test(Node):
 
 
     # Función para detectar diferentes figuras geométricas y círculos en una región de interés (ROI)
-    def detectar_figuras(roi, figuras_detectadas,n):
+    def detectar_figuras(self, roi, figuras_detectadas,n):
         # Convertir la ROI a escala de grises
         gris = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
     
@@ -194,7 +196,7 @@ class Perception_test(Node):
 
         return roi,n
     
-    def identificar_color(frame):
+    def identificar_color(self,frame):
     
         # Coordenadas de la región de interés (ROI) color
         roi_x1 = 0
@@ -286,7 +288,7 @@ class Perception_test(Node):
         return (True,color_maximo)
 
 
-    def detectar_palabras(imagen):
+    def detectar_palabras(self, imagen):
         
         # Coordenadas de la región de interés (ROI)
         x_roi = 0  # Coordenada x superior izquierda
@@ -313,9 +315,37 @@ class Perception_test(Node):
             cv2.rectangle(roi, (x, roi.shape[0] - y), (w, roi.shape[0] - h), (0, 255, 0), 2)
         
         return texto
+    
+    #Metodo que mueve el robot en una direccion con una velocidad y tiempo determinado
+    def car_twist(self, x, y, z, tiempo):
+        twist = Twist()
+        twist.linear.x = x
+        twist.linear.y = y
+        twist.linear.z = z
+        self.pub_carro_vel.publish(twist)
+        time.sleep(tiempo)
 
     #Metodo que apaga el timer
     def apagar_timer(self):
         if self.timer is not None:
             self.timer.cancel()
             self.timer = None
+
+
+
+def main(args=None):
+
+    rclpy.init(args=args)
+            
+    perception_test = Perception_test()
+
+    rclpy.spin(perception_test) 
+
+    perception_test.destroy_node()    
+
+    rclpy.shutdown()   
+
+
+if __name__ == '__main__':
+
+    main()

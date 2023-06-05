@@ -1,6 +1,8 @@
 import rclpy
 import time
 from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
 from proyecto_interfaces.srv import StartManipulationTest
 
 
@@ -126,11 +128,15 @@ class Manipulation_test(Node):
         time.sleep(tiempo)
 
     #Metodo que mueve la garra
-    def garra_twist(self, x, y, z, tiempo):    
+    def garra_twist(self, rot, j1, j2, j3, rotg, g, tiempo):    
         twist = Twist()
-        twist.linear.x = x
-        twist.linear.y = y
-        twist.linear.z = z
+        twist.linear.x = rot
+        twist.linear.y = j1
+        twist.linear.z = j2
+        twist.angular.x = j3
+        twist.angular.y = rotg
+        twist.angular.z = g
+
         self.pub_garra_vel.publish(twist)
         time.sleep(tiempo)
 

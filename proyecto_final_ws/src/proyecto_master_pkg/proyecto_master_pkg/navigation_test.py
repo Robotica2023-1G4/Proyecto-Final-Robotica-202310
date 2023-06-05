@@ -83,6 +83,22 @@ class Navigation_test(Node):
         punto_final = (desx, desy)
 
         
+def main(args=None):
+
+    rclpy.init(args=args)
+            
+    navigation_test = Navigation_test()
+
+    rclpy.spin(navigation_test) 
+
+    navigation_test.destroy_node()    
+
+    rclpy.shutdown()   
+
+
+if __name__ == '__main__':
+
+    main()
 
 
         
