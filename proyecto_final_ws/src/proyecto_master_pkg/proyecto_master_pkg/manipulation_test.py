@@ -66,10 +66,10 @@ class Manipulation_test(Node):
         if llamado == True:
             self.apagarTimer()
 
-            self.app_twist(1.0,0.0,0.0,1.0)
-            self.app_twist(0.0,0.0,1.0,1.0)
-            self.app_twist(1.0,0.0,0.0,1.0)
-            self.app_twist(0.0,0.0,0.0,0.1)
+            self.car_twist(1.0,0.0,0.0,1.0)
+            self.car_twist(0.0,0.0,1.0,1.0)
+            self.car_twist(1.0,0.0,0.0,1.0)
+            self.car_twist(0.0,0.0,0.0,0.1)
 
             #Recoger las 3 fichas
             for i in range(1,3):
