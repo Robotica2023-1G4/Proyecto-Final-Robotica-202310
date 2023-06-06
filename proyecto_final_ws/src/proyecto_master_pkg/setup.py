@@ -24,6 +24,7 @@ setup(
                             'manipulation = proyecto_master_pkg.manipulation_test:main',
                             'perception = proyecto_master_pkg.perception_test:main',
                             'control = proyecto_master_pkg.robot_controller:main',
+                            'camara = proyecto_master_pkg.NodoCamara:main',
         ],
     },
 )
