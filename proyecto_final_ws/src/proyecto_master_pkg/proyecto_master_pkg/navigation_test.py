@@ -4,6 +4,7 @@ import heapq
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
+import math
 from PIL import Image
 from queue import PriorityQueue
 from rclpy.node import Node
@@ -11,24 +12,20 @@ from proyecto_interfaces.srv import StartNavigationTest
 
 #Declaracion posicion inical del robot global
 #Ingresar posicion inicial en x e y
-global posx
-global posy
+global posInicial
 print('Ingrese posicion inicial en x:')
-posx = float(input())
+posx = int(input())
 print('Ingrese posicion inicial en y:')
-posy = float(input())
+posy = int(input())
+posInicial = (posx, posy)
 
-global desx
-global desy 
+global posFinal
 global llamado 
-desx = 0
-desy = 0
+posFinal = (0,0)
 llamado = False
 
-
-#Se define la lista de puntos visitados
-global camino 
-camino = []
+global orientacion
+orientacion = 0
         
 #Abrir el mapa formato pgm que se encuentra en la carpeta data
 global mapa 
@@ -48,6 +45,7 @@ class Navigation_test(Node):
         periodo = 1
         self.timer = self.create_timer(periodo, self.navegacion)
          
+
     def handle_request(self, request, response):
         
         global desx, desy, llamado
@@ -80,18 +78,18 @@ class Navigation_test(Node):
             gscore=np.full((len(mapa), len(mapa[0])), np.inf)
             fscore=np.full((len(mapa), len(mapa[0])), np.inf) 
 
-            gscore[posy][posx]=0
-            fscore[posy][posx]=self.h([posx,posy], [desx,desy])
+            gscore[posInicial[1]][posInicial[0]]=0
+            fscore[posInicial[1]][posInicial[0]]=self.h(posInicial, posFinal)
     
             open=PriorityQueue()
-            open.put((self.h([posx,posy], [desx,desy]),self.h([posx,posy], [desx,desy]),[posx,posy]))
+            open.put((self.h(posInicial, posFinal),self.h(posInicial, posFinal),posInicial))
             aPath={}
 
             while not open.empty():
         
                 currPix=open.get()[2]
                     
-                if currPix[0] in range(desx-r,desx+r) and currPix[1] in range(desy-r,desy+r):
+                if currPix[0] in range(posFinal[0]-r,posFinal[0]+r) and currPix[1] in range(posFinal[1]-r,posFinal[1]+r):
                     posf=currPix
                     break
                     
@@ -117,29 +115,61 @@ class Navigation_test(Node):
                     # analisis fscore y gscore
                     if available==True:
                         temp_gscore=gscore[currPix[1]][currPix[0]]+1
-                        temp_fscore=self.h(vecino,posf)+temp_gscore
+                        temp_fscore=self.h(vecino,posFinal)+temp_gscore
                         if temp_fscore<fscore[vecino[1]][vecino[0]]:
                             fscore[vecino[1]][vecino[0]]=temp_fscore
                             gscore[vecino[1]][vecino[0]]=temp_gscore
-                            open.put((temp_fscore,self.h(vecino,posf),vecino))
+                            open.put((temp_fscore,self.h(vecino,posFinal),vecino))
                             aPath[vecino]=currPix
 
             #Se crea el camino
-            path=[[desx,desy]]
-            while path[-1]!=[posx,posy]:
-                path.append(aPath[path[-1]])
+            cell = posFinal
+            path=[cell]
+            while cell!=posInicial:
+                path.append(aPath[cell])
+                cell=aPath[cell]
             path.reverse()
-            camino = path
 
             #Se imprime el camino
             print("El camino es: ")
-            print(camino)
+            print(path)
 
-            for val in camino:
+            for val in path:
                 mapa=self.draw(val,mapa,d)
 
             #Se muestra el mapa
             cv2.imshow("Mapa",mapa)
+
+            #Simplificar el camino
+            distancias = []
+            distancia_actual = 0
+            orientacion_actual = 0
+            for i in range(len(path)-1):
+                delta_x = path[i][0] - path[i-1][0]
+                delta_y = path[i][1] - path[i-1][1]
+
+                if delta_x > 0:
+                    orientacion = 0
+                elif delta_x < 0:
+                    orientacion = 180
+                elif delta_y < 0:
+                    orientacion = 90
+                elif delta_y > 0:
+                    orientacion = -90
+
+                if orientacion == orientacion_actual:
+                    distancia_actual += math.sqrt(delta_x**2 + delta_y**2)
+                else:
+                    distancias.append((distancia_actual, orientacion_actual))
+                    distancia_actual = math.sqrt(delta_x**2 + delta_y**2)
+                    orientacion_actual = orientacion
+
+            # Agregar la última distancia
+            distancias.append((distancia_actual, orientacion_actual))
+
+            #Hacer recorrer el camino
+            self.movimiento_camino(distancias)
+
 
     def draw(self,pos,img,d):
         #conversion a pixeles
@@ -153,11 +183,47 @@ class Navigation_test(Node):
                     pass
         return img
     
-    def h(self,pos0,posf):  #distancia manhattan (corresponde a la heuristica del problema)
+    def h(self,pos0,posf): 
         x=abs(posf[0]-pos0[0])
         y=abs(posf[1]-pos0[1])
      
         return x+y
+    
+
+    def movimiento_camino(self, distancias):
+
+        global orientacion 
+        for distancia, orientacionNueva in distancias:
+            #Cambiar orientacion del robot
+            if (orientacionNueva - orientacion) == 0:
+                self.car_twist(0.0, 0.0, 0.0, 1.0)
+            elif (orientacionNueva - orientacion) == 90:
+                self.car_twist(0.0, 0.0, 1.0, 1.0)
+            elif (orientacionNueva - orientacion) == -90:
+                self.car_twist(0.0, 0.0, -1.0, 1.0)
+            elif (orientacionNueva - orientacion) == 180 or (orientacionNueva - orientacion) == -180:
+                self.car_twist(0.0, 0.0, 1.0, 2.0)
+
+            #Convertir distancia pixeles a tiempo 
+            tiempo = distancia * (3/20) # 3/20 es la velocidad del robot en p/s
+
+            #Recorrer distancia robot
+            self.car_twist(1.0, 0.0, 0.0, tiempo)
+
+
+
+    #Mover el robot
+    #Metodo que mueve el robot en una direccion con una velocidad y tiempo determinado
+    def car_twist(self, x, y, z, tiempo):
+        twist = Twist()
+        twist.linear.x = x
+        twist.linear.y = y
+        twist.linear.z = z
+        self.pub_carro_vel.publish(twist)
+        time.sleep(tiempo)
+            
+    
+
 
 
     

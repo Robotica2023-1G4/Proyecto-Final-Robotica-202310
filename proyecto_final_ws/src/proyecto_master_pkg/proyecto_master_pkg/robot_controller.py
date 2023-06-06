@@ -33,7 +33,7 @@ class RobotController(Node):
         # Convertir velocidad lineal y angular en velocidades de los motores
         vel_linear = int(msg.linear.x)
         vel_linearY = int(msg.linear.y)
-        vel_angular = int(msg.angular.z)
+        vel_angular = int(msg.linear.z)
 
         if vel_linear > 0:
             pserialCar.write([87])

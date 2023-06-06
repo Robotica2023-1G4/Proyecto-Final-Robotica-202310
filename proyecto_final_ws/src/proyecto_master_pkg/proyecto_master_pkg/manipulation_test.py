@@ -67,9 +67,7 @@ class Manipulation_test(Node):
         #Metodo que mueve el robot hasta la mitad entre plataformas
         if llamado == True:
             self.apagarTimer()
-
-            self.car_twist(1.0,0.0,0.0,1.0)
-            self.car_twist(0.0,0.0,1.0,1.0)
+            
             self.car_twist(1.0,0.0,0.0,1.0)
             self.car_twist(0.0,0.0,0.0,0.1)
 
