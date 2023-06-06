@@ -3,7 +3,9 @@ import time
 from rclpy.node import Node
 from proyecto_interfaces.srv import StartPerceptionTest
 from geometry_msgs.msg import Twist
+from sensor_msgs.msg import Image
 from proyecto_interfaces.msg import Banner
+from cv_bridge import CvBridge
 import pytesseract
 import cv2
 import numpy as np
@@ -49,6 +51,9 @@ class Perception_test(Node):
             #Declaración de nodos publicadores
             self.pub_carro_vel = self.create_publisher(Twist, '/car_vel', 10)
             self.pub_banner = self.create_publisher(Banner, 'vision/banner_group_'+str(4), 10)
+            self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
+            self.subscription
+            self.bridge = CvBridge()
     
             #Declaracion del servicio
             self.service = self.create_service(StartPerceptionTest, '/group_'+str(4)+'/start_perception_test_srv', self.handle_request)
@@ -56,6 +61,15 @@ class Perception_test(Node):
             #Creacion temporizador 
             periodo = 1
             self.timer = self.create_timer(periodo, self.movimiento_a_banner)
+
+    def image_callback(self, msg):
+        try:
+            frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            # Aquí puedes procesar el marco de imagen de OpenCV según tus necesidades
+            # ...
+           
+        except Exception as e:
+            self.get_logger().info(str(e))
 
     def handle_request(self, request, response):
 

@@ -26,6 +26,7 @@ class Manipulation_test(Node):
         #Declaración de nodos publicadores
         self.pub_carro_vel = self.create_publisher(Twist, '/car_vel', 10)
         self.pub_garra_vel = self.create_publisher(Twist, '/gar_vel', 10)
+        
 
         #Declaracion del servicio
         self.service = self.create_service(StartManipulationTest, '/group_'+str(4)+'/start_manipulation_test_srv', self.handle_request)
@@ -68,7 +69,7 @@ class Manipulation_test(Node):
         if llamado == True:
             self.apagarTimer()
             
-            self.car_twist(1.0,0.0,0.0,1.0)
+            self.car_twist(1.0,0.0,0.0,2.0)
             self.car_twist(0.0,0.0,0.0,0.1)
 
             #Recoger las 3 fichas
