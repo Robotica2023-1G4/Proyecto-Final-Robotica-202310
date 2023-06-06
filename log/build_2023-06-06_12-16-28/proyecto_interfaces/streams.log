@@ -1,0 +1,334 @@
+[0.183s] Invoking command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_interfaces -DCMAKE_INSTALL_PREFIX=/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces
+[3.668s] -- The C compiler identification is GNU 11.3.0
+[4.854s] -- The CXX compiler identification is GNU 11.3.0
+[4.929s] -- Detecting C compiler ABI info
+[5.495s] -- Detecting C compiler ABI info - done
+[5.529s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.532s] -- Detecting C compile features
+[5.538s] -- Detecting C compile features - done
+[5.560s] -- Detecting CXX compiler ABI info
+[6.029s] -- Detecting CXX compiler ABI info - done
+[6.063s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.064s] -- Detecting CXX compile features
+[6.066s] -- Detecting CXX compile features - done
+[6.180s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.299s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[8.148s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[8.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.365s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.869s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.722s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[11.757s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.031s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.156s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[13.180s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[13.343s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[13.344s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.345s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[13.346s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[13.463s] -- Found PythonExtra: .so  
+[13.680s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[13.995s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.021s] -- Added test 'lint_cmake' to check CMake code style
+[14.039s] -- Added test 'xmllint' to check XML markup files
+[14.073s] -- Configuring done
+[14.335s] -- Generating done
+[14.355s] -- Build files have been written to: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
+[14.385s] Invoked command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_interfaces -DCMAKE_INSTALL_PREFIX=/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces
+[14.397s] Invoking command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j4 -l4
+[14.635s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[14.689s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[14.747s] [  3%] Built target ament_cmake_python_copy_proyecto_interfaces
+[16.488s] running egg_info
+[16.494s] creating proyecto_interfaces.egg-info
+[16.495s] writing proyecto_interfaces.egg-info/PKG-INFO
+[16.496s] writing dependency_links to proyecto_interfaces.egg-info/dependency_links.txt
+[16.496s] writing top-level names to proyecto_interfaces.egg-info/top_level.txt
+[16.497s] writing manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'
+[16.504s] reading manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'
+[16.509s] writing manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'
+[16.676s] [  3%] Built target ament_cmake_python_build_proyecto_interfaces_egg
+[17.669s] [  3%] Built target proyecto_interfaces__cpp
+[17.730s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[17.873s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[17.879s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[18.273s] [ 10%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_c.dir/rosidl_generator_c/proyecto_interfaces/msg/detail/banner__functions.c.o[0m
+[19.378s] [ 12%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_c.dir/rosidl_generator_c/proyecto_interfaces/srv/detail/start_navigation_test__functions.c.o[0m
+[20.048s] [ 14%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/proyecto_interfaces/msg/banner__type_support.cpp.o[0m
+[20.098s] [ 16%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_c.dir/rosidl_generator_c/proyecto_interfaces/srv/detail/start_perception_test__functions.c.o[0m
+[20.718s] [ 18%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_c.dir/rosidl_generator_c/proyecto_interfaces/srv/detail/start_manipulation_test__functions.c.o[0m
+[20.892s] [ 20%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/proyecto_interfaces/msg/detail/dds_fastrtps/banner__type_support.cpp.o[0m
+[20.935s] [ 21%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/proyecto_interfaces/msg/detail/banner__type_support.cpp.o[0m
+[21.204s] [ 23%] [32m[1mLinking C shared library libproyecto_interfaces__rosidl_generator_c.so[0m
+[21.474s] [ 23%] Built target proyecto_interfaces__rosidl_generator_c
+[21.579s] [ 25%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/proyecto_interfaces/srv/detail/start_navigation_test__type_support.cpp.o[0m
+[32.695s] [ 30%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/proyecto_interfaces/srv/detail/dds_fastrtps/start_navigation_test__type_support.cpp.o[0m
+[32.702s] [ 32%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/proyecto_interfaces/srv/detail/start_perception_test__type_support.cpp.o[0m
+[32.703s] [ 32%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/proyecto_interfaces/srv/start_navigation_test__type_support.cpp.o[0m
+[32.703s] [ 32%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/proyecto_interfaces/srv/start_perception_test__type_support.cpp.o[0m
+[34.947s] [ 34%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/proyecto_interfaces/srv/start_manipulation_test__type_support.cpp.o[0m
+[35.055s] [ 36%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/proyecto_interfaces/srv/detail/dds_fastrtps/start_perception_test__type_support.cpp.o[0m
+[36.071s] [ 38%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.cpp.o[0m
+[36.699s] [ 40%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/proyecto_interfaces/srv/detail/dds_fastrtps/start_manipulation_test__type_support.cpp.o[0m
+[37.333s] [ 41%] [32m[1mLinking CXX shared library libproyecto_interfaces__rosidl_typesupport_cpp.so[0m
+[37.709s] [ 41%] Built target proyecto_interfaces__rosidl_typesupport_cpp
+[37.826s] [ 43%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[38.625s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[39.252s] [ 47%] [32m[1mLinking CXX shared library libproyecto_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[39.714s] [ 47%] Built target proyecto_interfaces__rosidl_typesupport_introspection_cpp
+[39.793s] [ 49%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[40.202s] [ 50%] [32m[1mLinking CXX shared library libproyecto_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[40.684s] [ 50%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_cpp
+[41.490s] [ 52%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/proyecto_interfaces/msg/detail/banner__type_support.c.o[0m
+[41.500s] [ 54%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/proyecto_interfaces/srv/detail/start_navigation_test__type_support.c.o[0m
+[41.574s] [ 56%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/proyecto_interfaces/msg/detail/banner__type_support_c.cpp.o[0m
+[41.980s] [ 58%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/proyecto_interfaces/msg/banner__type_support.cpp.o[0m
+[42.196s] [ 60%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/proyecto_interfaces/srv/start_navigation_test__type_support.cpp.o[0m
+[42.336s] [ 61%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/proyecto_interfaces/srv/start_perception_test__type_support.cpp.o[0m
+[42.348s] [ 63%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/proyecto_interfaces/srv/detail/start_perception_test__type_support.c.o[0m
+[42.427s] [ 65%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/proyecto_interfaces/srv/start_manipulation_test__type_support.cpp.o[0m
+[42.565s] [ 67%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.c.o[0m
+[42.664s] [ 69%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/proyecto_interfaces/srv/detail/start_navigation_test__type_support_c.cpp.o[0m
+[42.668s] [ 70%] [32m[1mLinking CXX shared library libproyecto_interfaces__rosidl_typesupport_c.so[0m
+[42.865s] [ 72%] [32m[1mLinking C shared library libproyecto_interfaces__rosidl_typesupport_introspection_c.so[0m
+[42.955s] [ 72%] Built target proyecto_interfaces__rosidl_typesupport_c
+[43.027s] [ 74%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/proyecto_interfaces/srv/detail/start_perception_test__type_support_c.cpp.o[0m
+[43.140s] [ 74%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c
+[43.192s] [ 76%] [32mBuilding CXX object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/proyecto_interfaces/srv/detail/start_manipulation_test__type_support_c.cpp.o[0m
+[45.702s] [ 78%] [32m[1mLinking CXX shared library libproyecto_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[46.077s] [ 78%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c
+[46.194s] [ 78%] Built target proyecto_interfaces
+[46.335s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[49.959s] [ 80%] Built target proyecto_interfaces__py
+[50.077s] [ 81%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_py.dir/rosidl_generator_py/proyecto_interfaces/msg/_banner_s.c.o[0m
+[50.085s] [ 83%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_py.dir/rosidl_generator_py/proyecto_interfaces/srv/_start_navigation_test_s.c.o[0m
+[50.087s] [ 85%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_py.dir/rosidl_generator_py/proyecto_interfaces/srv/_start_perception_test_s.c.o[0m
+[50.090s] [ 87%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_generator_py.dir/rosidl_generator_py/proyecto_interfaces/srv/_start_manipulation_test_s.c.o[0m
+[51.003s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/proyecto_interfaces/libproyecto_interfaces__rosidl_generator_py.so[0m
+[51.287s] [ 89%] Built target proyecto_interfaces__rosidl_generator_py
+[51.441s] [ 90%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[51.472s] [ 92%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[51.485s] [ 94%] [32mBuilding C object CMakeFiles/proyecto_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[52.164s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[52.186s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[52.260s] [100%] [32m[1mLinking C shared library rosidl_generator_py/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[52.397s] [100%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c__pyext
+[52.407s] [100%] Built target proyecto_interfaces__rosidl_typesupport_c__pyext
+[52.476s] [100%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[52.688s] Invoked command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j4 -l4
+[53.599s] Invoking command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
+[53.649s] -- Install configuration: ""
+[53.662s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/rosidl_interfaces/proyecto_interfaces
+[53.685s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.717s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.736s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.h
+[53.739s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.742s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.c
+[53.752s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.h
+[53.755s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.h
+[53.758s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.c
+[53.762s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.h
+[53.765s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.h
+[53.768s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.h
+[53.769s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.h
+[53.772s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.h
+[53.774s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.c
+[53.778s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.h
+[53.780s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.h
+[53.783s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.h
+[53.785s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.h
+[53.787s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.789s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.791s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.h
+[53.793s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.h
+[53.796s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.c
+[53.800s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.h
+[53.802s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_generator_c__visibility_control.h
+[53.804s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.h
+[53.810s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.sh
+[53.814s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.dsv
+[53.817s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_c.so
+[53.822s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_c.so" to ""
+[53.826s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.827s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.828s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.828s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_c.h
+[53.829s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_c.h
+[53.831s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_c.h
+[53.833s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.834s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.834s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_c.h
+[53.837s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[53.839s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_c.so
+[53.843s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[53.843s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.844s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.844s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.845s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_c.h
+[53.847s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.c
+[53.849s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_c.h
+[53.851s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.c
+[53.853s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_c.h
+[53.855s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.c
+[53.857s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.857s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.858s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.c
+[53.860s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_c.h
+[53.862s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[53.864s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_c.so
+[53.868s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[53.869s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_c.so
+[53.872s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_c.so" to ""
+[53.873s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.873s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.873s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.874s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__traits.hpp
+[53.878s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.hpp
+[53.889s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__builder.hpp
+[53.890s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__traits.hpp
+[53.891s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__builder.hpp
+[53.891s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.hpp
+[53.892s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.hpp
+[53.893s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__traits.hpp
+[53.899s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__builder.hpp
+[53.901s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.hpp
+[53.904s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.hpp
+[53.906s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.hpp
+[53.909s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.909s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.hpp
+[53.913s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.913s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.hpp
+[53.916s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__traits.hpp
+[53.919s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__builder.hpp
+[53.921s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.922s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.922s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.923s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/dds_fastrtps
+[53.924s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_cpp.hpp
+[53.926s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_cpp.hpp
+[53.928s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_cpp.hpp
+[53.930s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.931s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.931s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/dds_fastrtps
+[53.932s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_cpp.hpp
+[53.935s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[53.937s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[53.941s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[53.942s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[53.943s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[53.943s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[53.944s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.cpp
+[53.945s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.cpp
+[53.949s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_cpp.hpp
+[53.951s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.cpp
+[53.953s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_cpp.hpp
+[53.956s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_cpp.hpp
+[53.959s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[53.959s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[53.960s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_cpp.hpp
+[53.963s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.cpp
+[53.965s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_cpp.so
+[53.969s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[53.970s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_cpp.so
+[53.973s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_cpp.so" to ""
+[53.974s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.sh
+[53.977s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.dsv
+[53.979s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info
+[53.981s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[53.983s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[53.985s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[53.988s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[53.990s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces
+[53.992s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[53.993s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[53.998s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/__init__.py
+[53.999s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[54.000s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/libproyecto_interfaces__rosidl_generator_py.so
+[54.002s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv
+[54.003s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test.py
+[54.004s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test_s.c
+[54.009s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/__init__.py
+[54.010s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test_s.c
+[54.011s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test.py
+[54.012s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test.py
+[54.014s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test_s.c
+[54.015s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[54.018s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg
+[54.019s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner_s.c
+[54.021s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner.py
+[54.022s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/__init__.py
+[54.024s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[54.026s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_c.c
+[54.238s] Listing '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces'...
+[54.239s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/__init__.py'...
+[54.240s] Listing '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg'...
+[54.242s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/__init__.py'...
+[54.243s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner.py'...
+[54.244s] Listing '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv'...
+[54.245s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/__init__.py'...
+[54.247s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test.py'...
+[54.248s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test.py'...
+[54.249s] Compiling '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test.py'...
+[54.266s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[54.270s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[54.273s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[54.277s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[54.279s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[54.283s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[54.284s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_py.so
+[54.288s] -- Set runtime path of "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_py.so" to ""
+[54.289s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.idl
+[54.292s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.idl
+[54.294s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.idl
+[54.300s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.idl
+[54.302s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.msg
+[54.303s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.srv
+[54.304s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Request.msg
+[54.304s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Response.msg
+[54.311s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.srv
+[54.312s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Request.msg
+[54.313s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Response.msg
+[54.316s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.srv
+[54.317s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Request.msg
+[54.321s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Response.msg
+[54.325s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/package_run_dependencies/proyecto_interfaces
+[54.329s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/parent_prefix_path/proyecto_interfaces
+[54.332s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.sh
+[54.335s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.dsv
+[54.338s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.sh
+[54.341s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.dsv
+[54.344s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.bash
+[54.347s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.sh
+[54.350s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.zsh
+[54.353s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.dsv
+[54.355s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.dsv
+[54.358s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/packages/proyecto_interfaces
+[54.363s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport.cmake
+[54.365s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport-noconfig.cmake
+[54.370s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[54.373s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[54.378s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[54.383s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[54.385s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport.cmake
+[54.388s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[54.392s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cppExport.cmake
+[54.396s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[54.402s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[54.407s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[54.410s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[54.415s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport.cmake
+[54.418s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[54.425s] -- Old export file "/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport-noconfig.cmake].
+[54.426s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport.cmake
+[54.426s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[54.428s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake-extras.cmake
+[54.432s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[54.435s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[54.437s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[54.440s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[54.443s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[54.446s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[54.449s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig.cmake
+[54.452s] -- Installing: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig-version.cmake
+[54.455s] -- Up-to-date: /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.xml
+[54.483s] Invoked command in '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_interfaces

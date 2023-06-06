@@ -1,0 +1,30 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+writing ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/dependency_links.txt
+writing entry points to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/entry_points.txt
+writing requirements to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/requires.txt
+writing top-level names to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/top_level.txt
+reading manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying proyecto_master_pkg/robot_controller.py -> /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/robot_controller.py -> /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg
+byte-compiling /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg/robot_controller.py to robot_controller.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control script to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+Installing manipulation script to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+Installing master script to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+Installing navigation script to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+Installing perception script to /home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+writing list of installed files to '/home/abmodelo2023/Proyecto/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log'

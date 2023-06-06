@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h
+#include <SoftwareSerial.h>
 
 char VarChar;
 
@@ -37,6 +37,7 @@ boolean dirTD = true;
 boolean dirDD = true;
 
 // variables para definiciòn del tiempo de muestreo
+int k=1000;
 volatile unsigned muestreoActual = 0;                     
 volatile unsigned muestreoAnterior = 0;
 volatile unsigned deltaMuestreo = 0;

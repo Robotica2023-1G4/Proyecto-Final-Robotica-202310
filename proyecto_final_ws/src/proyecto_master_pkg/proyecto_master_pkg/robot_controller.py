@@ -7,8 +7,8 @@ import time
 import serial
 
 #Nombres entrada del puerto para los motores
-pserialCar = serial.Serial('/dev/ttyACM0', 9600)
-pserialGar = serial.Serial('/dev/ttyACM1', 9600)
+pserialCar = serial.Serial('/dev/ttyACM1', 9600)
+pserialGar = serial.Serial('/dev/ttyACM0', 9600)
 
 #Se crea la clase que se encarga de recibir los mensajes de velocidad
 class RobotController(Node):
@@ -34,6 +34,8 @@ class RobotController(Node):
         vel_linear = int(msg.linear.x)
         vel_linearY = int(msg.linear.y)
         vel_angular = int(msg.linear.z)
+
+        print(vel_linear)
 
         if vel_linear > 0:
             pserialCar.write([87])
