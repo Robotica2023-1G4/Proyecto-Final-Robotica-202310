@@ -13,11 +13,7 @@ from proyecto_interfaces.srv import StartNavigationTest
 #Declaracion posicion inical del robot global
 #Ingresar posicion inicial en x e y
 global posInicial
-print('Ingrese posicion inicial en x:')
-posx = int(input())
-print('Ingrese posicion inicial en y:')
-posy = int(input())
-posInicial = (posx, posy)
+posInicial = (38, 140)
 
 global posFinal
 global llamado 
@@ -48,10 +44,12 @@ class Navigation_test(Node):
 
     def handle_request(self, request, response):
         
-        global desx, desy, llamado
+        global posFinal, llamado
         # Inicializa la respuesta del servicio
         desx = request.x
         desy = request.y
+
+        posFinal = (int(desx),int(desy))
 
         #Se imprime la solicitud recibida
         respuesta = "Se recibio la solicitud de navegacion a las coordenadas: " + str(desx) + ", " + str(desy) + "."
@@ -65,12 +63,12 @@ class Navigation_test(Node):
 
     def navegacion(self):
 
-        global posx, posy, desx, desy, llamado, camino, mapa
+        global posInicial, posFinal, llamado, camino, mapa
 
         #Se revisa si se llamo
         if llamado == True:
 
-            d=23 # Span de pepe en centimetros
+            d=20 # Span de pepe en centimetros
             r=10 # parametro de salto entre vecinos (pixeles)
     
             d=round(round(d*4)/2)  #mitad del span de pepe en pixeles
@@ -78,19 +76,24 @@ class Navigation_test(Node):
             gscore=np.full((len(mapa), len(mapa[0])), np.inf)
             fscore=np.full((len(mapa), len(mapa[0])), np.inf) 
 
+            posInicial = self.cm_to_pix(posInicial)
+            posFinal = self.cm_to_pix(posFinal)
             gscore[posInicial[1]][posInicial[0]]=0
             fscore[posInicial[1]][posInicial[0]]=self.h(posInicial, posFinal)
+
     
             open=PriorityQueue()
             open.put((self.h(posInicial, posFinal),self.h(posInicial, posFinal),posInicial))
             aPath={}
 
+
             while not open.empty():
         
                 currPix=open.get()[2]
+
                     
                 if currPix[0] in range(posFinal[0]-r,posFinal[0]+r) and currPix[1] in range(posFinal[1]-r,posFinal[1]+r):
-                    posf=currPix
+                    posFinal=currPix
                     break
                     
                     
@@ -101,10 +104,11 @@ class Navigation_test(Node):
                 inf=(currPix[0],currPix[1]-r)
                     
                 vecinos=[izq,der,sup,inf]
+                print(vecinos)
                     
                 for vecino in vecinos:
                         
-                    #revision de celdas libres y tamano del Pepe
+                    #revision de celdas libres y tamano
                     available=True
                     for i in range(vecino[1]-d,vecino[1]+d):
                         for j in range(vecino[0]-d,vecino[0]+d):
@@ -115,6 +119,7 @@ class Navigation_test(Node):
                     # analisis fscore y gscore
                     if available==True:
                         temp_gscore=gscore[currPix[1]][currPix[0]]+1
+                        print(temp_gscore)
                         temp_fscore=self.h(vecino,posFinal)+temp_gscore
                         if temp_fscore<fscore[vecino[1]][vecino[0]]:
                             fscore[vecino[1]][vecino[0]]=temp_fscore
@@ -124,8 +129,9 @@ class Navigation_test(Node):
 
             #Se crea el camino
             cell = posFinal
+            print(cell)
             path=[cell]
-            while cell!=posInicial:
+            while cell!=posFinal:
                 path.append(aPath[cell])
                 cell=aPath[cell]
             path.reverse()
@@ -188,6 +194,10 @@ class Navigation_test(Node):
         y=abs(posf[1]-pos0[1])
      
         return x+y
+
+    def cm_to_pix(self,p0) -> tuple:
+        pix = (round(p0[0]*4),round(p0[1]*4))
+        return pix
     
 
     def movimiento_camino(self, distancias):
@@ -223,7 +233,22 @@ class Navigation_test(Node):
         time.sleep(tiempo)
             
     
+def main(args=None):
 
+    rclpy.init(args=args)
+            
+    navigation_test = Navigation_test()
+
+    rclpy.spin(navigation_test) 
+
+    navigation_test.destroy_node()    
+
+    rclpy.shutdown()   
+
+
+if __name__ == '__main__':
+
+    main()
 
 
     
