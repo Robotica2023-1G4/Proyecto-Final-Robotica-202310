@@ -52,7 +52,6 @@ class Perception_test(Node):
             self.pub_carro_vel = self.create_publisher(Twist, '/car_vel', 10)
             self.pub_banner = self.create_publisher(Banner, 'vision/banner_group_'+str(4), 10)
             self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
-            self.subscription
             self.bridge = CvBridge()
     
             #Declaracion del servicio
@@ -65,6 +64,8 @@ class Perception_test(Node):
     def image_callback(self, msg):
         try:
             frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            self.vision_computadora(frame)
+            
             # Aquí puedes procesar el marco de imagen de OpenCV según tus necesidades
             # ...
            
@@ -123,10 +124,13 @@ class Perception_test(Node):
             if banner1 == 3 or banner2 == 3:
                 self.vision_computadora()
 
-    def vision_computadora(self):
+    def vision_computadora(self, fotograma):
 
         # Capturar un fotograma de la cámara
-        ret, fotograma = captura.read()
+        
+        #cv2.imshow("Detección de figuras", fotograma)
+        #cv2.waitKey(1)
+
             
         texto = self.detectar_palabras(fotograma)
         
@@ -145,6 +149,8 @@ class Perception_test(Node):
             
         # Mostrar el fotograma completo con la región de interés y las figuras detectadas
         cv2.imshow("Detección de figuras", fotograma)
+        cv2.waitKey(1)
+
 
 
     # Función para detectar diferentes figuras geométricas y círculos en una región de interés (ROI)
