@@ -26,7 +26,6 @@ class Manipulation_test(Node):
         #Declaración de nodos publicadores
         self.pub_carro_vel = self.create_publisher(Twist, '/car_vel', 10)
         self.pub_garra_vel = self.create_publisher(Twist, '/gar_vel', 10)
-        
 
         #Declaracion del servicio
         self.service = self.create_service(StartManipulationTest, '/group_'+str(4)+'/start_manipulation_test_srv', self.handle_request)
@@ -69,11 +68,18 @@ class Manipulation_test(Node):
         if llamado == True:
             self.apagarTimer()
             
-            self.car_twist(1.0,0.0,0.0,2.0)
-            self.car_twist(0.0,0.0,0.0,0.1)
-
-            #Recoger las 3 fichas
             for i in range(1,3):
+            
+                if plataformaSalida == "platform_1":
+                    self.car_twist(1.0,0.0,0.0,1.0)
+                    self.car_twist(0.0,0.0,0.0,0.1)
+                elif plataformaSalida == "platform_2":
+                    self.car_twist(1.0,0.0,0.0,1.6)
+                    self.car_twist(0.0,0.0,0.0,0.1)
+
+
+                #Recoger las 3 fichas
+                #for i in range(1,3):
                 self.movimiento_garra()
 
 
@@ -82,39 +88,55 @@ class Manipulation_test(Node):
         global ficha, plataformaSalida, llamado
 
         #Grados plataforma 1
-        rotP1, j1P1, j2P1, j3P1, rotgP1, garP1 = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+        rotP1, j1P1, j2P1, j3P1, rotgP1, garP1 = 0.0, 25.0, 160.0, 0.0, 120.0, 40.0
         #Grados plataforma 2
-        rotP2, j1P2, j2P2, j3P2, rotgP2, garP2 = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+        rotP2, j1P2, j2P2, j3P2, rotgP2, garP2 = 55.0, 180.0, 120.0, 80.0, 170.0, 40.0
 
         #Metodo que mueve la garra
         if llamado == True:
             if plataformaSalida == "platform_1":
                 #Movimiento hasta plataforma 1 
+                self.garra_twist(rotP1,j1P1,j2P1,j3P1+40.0,rotgP1,garP1,2.0)
                 self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,garP1,2.0)
                 #Agarre de ficha
-                self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,90.0,2.0)
+                self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,100.0,2.0)
+                self.garra_twist(100.0,0.0,0.0,90.0,rotgP1,100.0,2.0)
+                #Mover carro
+                self.car_twist(1.0,0.0,0.0,0.6)
+                self.car_twist(0.0,0.0,0.0,0.1)
 
             elif plataformaSalida == "platform_2":
                 #Movimiento hasta plataforma 1 
+                self.garra_twist(rotP2,j1P2,j2P2,j3P2-40.0,rotgP2,garP2,2.0)
                 self.garra_twist(rotP2,j1P2,j2P2,j3P2,rotgP2,garP2,2.0)
                 #Agarre de ficha
-                self.garra_twist(rotP2,j2P2,j2P2,j3P2,rotgP2,90.0,2.0)
-
-            self.garra_twist(60.0,0.0,0.0,0.0,0.0,90.0,2.0)
+                self.garra_twist(rotP2,j1P2,j2P2,j3P2,rotgP2,100.0,2.0)
+                self.garra_twist(rotP2+20.0,j1P2-80.0,j2P2,j3P2-40.0,rotgP2,100.0,2.0)
+                #Mover carro
+                self.car_twist(-1.0,0.0,0.0,0.6)
+                self.car_twist(0.0,0.0,0.0,0.1)
 
             #Movimiento hacia la plataforma de destino
-            if plataformaSalida == "platform_1":
+            if plataformaSalida == "platform_2":
                 #Movimiento hasta plataforma 1 
-                self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,90.0,2.0)
+                self.garra_twist(rotP1,j1P1,j2P1,j3P1+40.0,rotgP1,100.0,2.0)
+                self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,100.0,2.0)
                 #Agarre de ficha
                 self.garra_twist(rotP1,j1P1,j2P1,j3P1,rotgP1,garP1,2.0)
-            elif plataformaSalida == "platform_2":
+                self.car_twist(-1.0,0.0,0.0,1.0)
+                self.car_twist(0.0,0.0,0.0,0.1)
+            elif plataformaSalida == "platform_1":
                 #Movimiento hasta plataforma 1 
-                self.garra_twist(rotP2,j1P2,j2P2,j3P2,rotgP2,90.0,2.0)
+                self.garra_twist(rotP2,j1P2,j2P2,j3P2-40.0,rotgP2,100.0,2.0)
+                self.garra_twist(rotP2,j1P2,j2P2,j3P2,rotgP2,100.0,2.0)
                 #Agarre de ficha
                 self.garra_twist(rotP2,j1P2,j2P2,j3P2,rotgP2,garP2,2.0)
+                self.garra_twist(rotP2,j1P2,j2P2,j3P2+30.0,rotgP2,garP2,2.0)
+                self.car_twist(-1.0,0.0,0.0,1.6)
+                self.car_twist(0.0,0.0,0.0,0.1)
             
-            self.garra_twist(60.0,0.0,0.0,0.0,0.0,0.0,10.0)
+            self.garra_twist(100.0,0.0,0.0,90.0,20.0,0.0,10.0)
+
 
     
     #Metodo que mueve el robot en una direccion con una velocidad y tiempo determinado
