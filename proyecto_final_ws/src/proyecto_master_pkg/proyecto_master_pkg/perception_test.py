@@ -13,6 +13,10 @@ import numpy as np
 global banner1
 global banner2
 global llamado 
+global n
+
+
+n=0
 
 banner1 = 0
 banner2 = 0
@@ -32,7 +36,7 @@ roi_y = 0  # Posición y de la esquina superior izquierda de la ROI
 roi_width = 640  # Ancho de la ROI
 roi_height = 160  # Altura de la ROI
 
-n = 0
+
 
 # Clase para representar una figura detectada
 class Figura:
@@ -53,6 +57,7 @@ class Perception_test(Node):
             self.pub_banner = self.create_publisher(Banner, 'vision/banner_group_'+str(4), 10)
             self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
             self.bridge = CvBridge()
+            self.n = 0
     
             #Declaracion del servicio
             self.service = self.create_service(StartPerceptionTest, '/group_'+str(4)+'/start_perception_test_srv', self.handle_request)
@@ -136,20 +141,25 @@ class Perception_test(Node):
         
         # Obtener la región de interés (ROI) del fotograma
         roi = fotograma[roi_y:roi_y+roi_height, roi_x:roi_x+roi_width]
+
+        
+
         
         # Detectar figuras geométricas y círculos en la región de interés
         roi_con_figuras,figura = self.detectar_figuras(roi, figuras_detectadas,n)
             
-        n = figura
+        self.n = figura
             
-        print(self.identificar_color(fotograma)[1],n, texto)
+        print(self.identificar_color(fotograma)[1], self.n, texto)
             
         # Dibujar un rectángulo que representa la región de interés en el fotograma completo
         cv2.rectangle(fotograma, (roi_x, roi_y), (roi_x+roi_width, roi_y+roi_height), (0, 0, 255), 2)
-            
+    
         # Mostrar el fotograma completo con la región de interés y las figuras detectadas
         cv2.imshow("Detección de figuras", fotograma)
         cv2.waitKey(1)
+
+        
 
 
 
