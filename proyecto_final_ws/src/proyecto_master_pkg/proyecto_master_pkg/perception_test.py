@@ -187,7 +187,7 @@ class Perception_test(Node):
         # Detectar figuras geométricas y círculos en la región de interés
         roi_con_figuras,figura = self.detectar_figuras(roi, figuras_detectadas,self.n)
             
-        self.n = figura
+        nomFigura = self.convertir_figura(figura)
 
         color = self.identificar_color(fotograma)[1]
             
@@ -200,9 +200,23 @@ class Perception_test(Node):
         cv2.imshow("Detección de figuras", fotograma)
         cv2.waitKey(1)
 
-        return figura, texto, color
+        return nomFigura, texto, color
 
-        
+    def convertir_figura(self,numero_lados):
+        if numero_lados < 3 or numero_lados > 8:
+            return "No se reconoce la figura"
+        elif numero_lados == 3:
+            return "Triángulo"
+        elif numero_lados == 4:
+            return "Cuadrado"
+        elif numero_lados == 5:
+            return "Pentágono"
+        elif numero_lados == 6:
+            return "Hexágono"
+        elif numero_lados == 7:
+            return "Heptágono"
+        elif numero_lados == 8:
+            return "Octágono"
 
 
 
