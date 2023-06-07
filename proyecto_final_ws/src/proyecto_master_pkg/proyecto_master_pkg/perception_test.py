@@ -13,10 +13,9 @@ import numpy as np
 global banner1
 global banner2
 global llamado 
-global n
 
 
-n=0
+
 
 banner1 = 0
 banner2 = 0
@@ -58,6 +57,7 @@ class Perception_test(Node):
             self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
             self.bridge = CvBridge()
             self.n = 0
+            print('111')
     
             #Declaracion del servicio
             self.service = self.create_service(StartPerceptionTest, '/group_'+str(4)+'/start_perception_test_srv', self.handle_request)
@@ -146,7 +146,7 @@ class Perception_test(Node):
 
         
         # Detectar figuras geométricas y círculos en la región de interés
-        roi_con_figuras,figura = self.detectar_figuras(roi, figuras_detectadas,n)
+        roi_con_figuras,figura = self.detectar_figuras(roi, figuras_detectadas,self.n)
             
         self.n = figura
             
