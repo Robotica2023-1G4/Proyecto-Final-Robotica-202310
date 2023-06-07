@@ -10,13 +10,18 @@ class CameraNode(Node):
         self.publisher_ = self.create_publisher(Image, 'camara_topic', 10)
         self.timer_ = self.create_timer(0.1, self.timer_callback)
         self.bridge = CvBridge()
-        self.camera = cv2.VideoCapture('/dev/video1')  # Número de dispositivo de la cámara
+        self.camera = cv2.VideoCapture('http://192.168.73.11:8080/video')  # Número de dispositivo de la cámara
         
 
     def timer_callback(self):
         ret, frame = self.camera.read()
+        
+
+
+        
         if ret:
             img_msg = self.bridge.cv2_to_imgmsg(frame, 'bgr8')
+            
             self.publisher_.publish(img_msg)
 
 def main(args=None):

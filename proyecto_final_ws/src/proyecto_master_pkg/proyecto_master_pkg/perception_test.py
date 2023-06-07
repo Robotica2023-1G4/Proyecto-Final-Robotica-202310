@@ -30,10 +30,10 @@ llamado = False
 figuras_detectadas = {}
 
 # Especificar la región de interés (ROI)
-roi_x = 0  # Posición x de la esquina superior izquierda de la ROI
-roi_y = 0  # Posición y de la esquina superior izquierda de la ROI
-roi_width = 640  # Ancho de la ROI
-roi_height = 160  # Altura de la ROI
+roi_x = 850  # Posición x de la esquina superior izquierda de la ROI
+roi_y = 170  # Posición y de la esquina superior izquierda de la ROI
+roi_width = 700  # Ancho de la ROI
+roi_height = 360  # Altura de la ROI
 
 
 
@@ -70,7 +70,13 @@ class Perception_test(Node):
 
     def image_callback(self, msg):
         try:
+        
             self.frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+           
+            #cv2.imshow('camara',self.frame)
+            #cv2.waitKey(1)
+        
+            #cv2.destroyAllWindows()
             self.vision_computadora(self.frame)
             # Aquí puedes procesar el marco de imagen de OpenCV según tus necesidades
             # ...
@@ -287,10 +293,10 @@ class Perception_test(Node):
     def identificar_color(self,frame):
     
         # Coordenadas de la región de interés (ROI) color
-        roi_x1 = 0
-        roi_y1 = 320
-        roi_width1 = 640
-        roi_height1 = 160
+        roi_x1 = 850
+        roi_y1 = 870
+        roi_width1 = 700
+        roi_height1 = 360
     
         # Definir la región de interés (ROI)
         roi = frame[roi_y1:roi_y1+roi_height1, roi_x1:roi_x1+roi_width1]
@@ -379,10 +385,10 @@ class Perception_test(Node):
     def detectar_palabras(self, imagen):
         
         # Coordenadas de la región de interés (ROI)
-        x_roi = 0  # Coordenada x superior izquierda
-        y_roi = 160  # Coordenada y superior izquierda
-        w_roi = 640  # Ancho de la región
-        h_roi = 160  # Altura de la región
+        x_roi = 850  # Coordenada x superior izquierda
+        y_roi = 450  # Coordenada y superior izquierda
+        w_roi = 700  # Ancho de la región
+        h_roi = 300  # Altura de la región
         
         # Recortar la imagen utilizando las coordenadas de la ROI
         roi = imagen[y_roi:y_roi+h_roi, x_roi:x_roi+w_roi]
@@ -394,13 +400,13 @@ class Perception_test(Node):
         texto = pytesseract.image_to_string(roi_gris)
             
         # Obtener las coordenadas de las palabras encontradas por Tesseract
-        #cajas_palabras = pytesseract.image_to_boxes(roi_gris)
+        cajas_palabras = pytesseract.image_to_boxes(roi_gris)
             
-        # Dibujar los recuadros alrededor de las palabras en la imagen en vivo
-        #for caja in cajas_palabras.splitlines():
-            #caja = caja.split(' ')
-            #x, y, w, h = int(caja[1]), int(caja[2]), int(caja[3]), int(caja[4])
-            #cv2.rectangle(roi, (x, roi.shape[0] - y), (w, roi.shape[0] - h), (0, 255, 0), 2)
+        #Dibujar los recuadros alrededor de las palabras en la imagen en vivo
+        for caja in cajas_palabras.splitlines():
+            caja = caja.split(' ')
+            x, y, w, h = int(caja[1]), int(caja[2]), int(caja[3]), int(caja[4])
+            cv2.rectangle(roi, (x, roi.shape[0] - y), (w, roi.shape[0] - h), (0, 255, 0), 2)
         
         return texto
     
@@ -409,7 +415,7 @@ class Perception_test(Node):
         twist = Twist()
         twist.linear.x = x
         twist.linear.y = y
-        twist.linear.z = z
+        twist.linear.z = z  
         self.pub_carro_vel.publish(twist)
         time.sleep(tiempo)
 
