@@ -57,7 +57,7 @@ class Perception_test(Node):
             self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
             self.bridge = CvBridge()
             self.n = 0
-            print('111')
+            
     
             #Declaracion del servicio
             self.service = self.create_service(StartPerceptionTest, '/group_'+str(4)+'/start_perception_test_srv', self.handle_request)
