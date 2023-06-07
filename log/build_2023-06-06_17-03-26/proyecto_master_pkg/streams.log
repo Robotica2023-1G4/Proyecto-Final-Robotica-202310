@@ -1,0 +1,39 @@
+[0.792s] Invoking command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg': PYTHONPATH=/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/prefix_override:/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/proyecto_master_pkg build --build-base /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build install --record /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
+[1.094s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.094s]   warnings.warn(
+[1.105s] running egg_info
+[1.106s] writing ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/PKG-INFO
+[1.106s] writing dependency_links to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/dependency_links.txt
+[1.106s] writing entry points to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/entry_points.txt
+[1.106s] writing requirements to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/requires.txt
+[1.107s] writing top-level names to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/top_level.txt
+[1.110s] reading manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+[1.112s] writing manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'
+[1.113s] running build
+[1.113s] running build_py
+[1.113s] copying proyecto_master_pkg/manipulation_test.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg
+[1.113s] copying proyecto_master_pkg/perception_test.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg
+[1.114s] copying proyecto_master_pkg/NodoCamara.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg
+[1.114s] running install
+[1.114s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.114s]   warnings.warn(
+[1.115s] running install_lib
+[1.116s] copying /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/manipulation_test.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg
+[1.116s] copying /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/perception_test.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg
+[1.116s] copying /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/NodoCamara.py -> /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg
+[1.117s] byte-compiling /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg/manipulation_test.py to manipulation_test.cpython-310.pyc
+[1.119s] byte-compiling /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg/perception_test.py to perception_test.cpython-310.pyc
+[1.123s] byte-compiling /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg/NodoCamara.py to NodoCamara.cpython-310.pyc
+[1.124s] running install_data
+[1.126s] running install_egg_info
+[1.129s] removing '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.129s] Copying ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info
+[1.131s] running install_scripts
+[1.156s] Installing camara script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.157s] Installing control script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.157s] Installing manipulation script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.157s] Installing master script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.158s] Installing navigation script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.158s] Installing perception script to /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg
+[1.158s] writing list of installed files to '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log'
+[1.206s] Invoked command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg' returned '0': PYTHONPATH=/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/prefix_override:/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/proyecto_master_pkg build --build-base /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build install --record /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
