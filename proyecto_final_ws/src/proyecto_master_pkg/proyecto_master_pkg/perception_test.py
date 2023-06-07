@@ -119,6 +119,7 @@ class Perception_test(Node):
                 frame1 = self.frame.copy()
                 figura, texto, color = self.vision_computadora(frame1)
                 banner1 = Banner()
+                banner1.banner = 1
                 banner1.figure = figura
                 banner1.word = texto
                 banner1.color = color
@@ -141,6 +142,7 @@ class Perception_test(Node):
                 frame2 = self.frame.copy()
                 figura, texto, color = self.vision_computadora(frame2)
                 banner2 = Banner()
+                banner2.banner = 2
                 banner2.figure = figura
                 banner2.word = texto
                 banner2.color = color
@@ -162,6 +164,7 @@ class Perception_test(Node):
                 frame3 = self.frame.copy()
                 figura, texto, color = self.vision_computadora(frame3)
                 banner3 = Banner()
+                banner2.banner = 2
                 banner3.figure = figura
                 banner3.word = texto
                 banner3.color = color
