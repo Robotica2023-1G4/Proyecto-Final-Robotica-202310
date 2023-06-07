@@ -104,7 +104,6 @@ class Perception_test(Node):
 
             #Se mueve hacia el inicio de la prueba
             self.car_twist(1.0,0.0,0.0,1.0)
-            self.car_twist(0.0,0.0,1.0,1.0)
             self.car_twist(1.0,0.0,0.0,1.0)
             self.car_twist(0.0,0.0,0.0,0.1)
 
