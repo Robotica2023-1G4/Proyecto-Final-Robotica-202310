@@ -71,6 +71,7 @@ class Perception_test(Node):
     def image_callback(self, msg):
         try:
             self.frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            self.vision_computadora(self.frame)
             # Aquí puedes procesar el marco de imagen de OpenCV según tus necesidades
             # ...
            
@@ -393,13 +394,13 @@ class Perception_test(Node):
         texto = pytesseract.image_to_string(roi_gris)
             
         # Obtener las coordenadas de las palabras encontradas por Tesseract
-        cajas_palabras = pytesseract.image_to_boxes(roi_gris)
+        #cajas_palabras = pytesseract.image_to_boxes(roi_gris)
             
         # Dibujar los recuadros alrededor de las palabras en la imagen en vivo
-        for caja in cajas_palabras.splitlines():
-            caja = caja.split(' ')
-            x, y, w, h = int(caja[1]), int(caja[2]), int(caja[3]), int(caja[4])
-            cv2.rectangle(roi, (x, roi.shape[0] - y), (w, roi.shape[0] - h), (0, 255, 0), 2)
+        #for caja in cajas_palabras.splitlines():
+            #caja = caja.split(' ')
+            #x, y, w, h = int(caja[1]), int(caja[2]), int(caja[3]), int(caja[4])
+            #cv2.rectangle(roi, (x, roi.shape[0] - y), (w, roi.shape[0] - h), (0, 255, 0), 2)
         
         return texto
     

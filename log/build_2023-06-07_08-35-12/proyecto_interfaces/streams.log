@@ -1,0 +1,222 @@
+[0.025s] Invoking command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j8 -l8
+[0.118s] [  1%] Built target proyecto_interfaces__cpp
+[0.130s] [ 12%] Built target proyecto_interfaces__rosidl_generator_c
+[0.139s] [ 12%] Built target ament_cmake_python_copy_proyecto_interfaces
+[0.162s] [ 23%] Built target proyecto_interfaces__rosidl_typesupport_cpp
+[0.163s] [ 34%] Built target proyecto_interfaces__rosidl_typesupport_introspection_cpp
+[0.167s] [ 45%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.173s] [ 61%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c
+[0.174s] [ 67%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c
+[0.178s] [ 78%] Built target proyecto_interfaces__rosidl_typesupport_c
+[0.198s] [ 78%] Built target proyecto_interfaces
+[0.217s] [ 80%] Built target proyecto_interfaces__py
+[0.243s] [ 89%] Built target proyecto_interfaces__rosidl_generator_py
+[0.269s] [100%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.269s] [100%] Built target proyecto_interfaces__rosidl_typesupport_c__pyext
+[0.269s] [100%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.433s] running egg_info
+[0.434s] writing proyecto_interfaces.egg-info/PKG-INFO
+[0.434s] writing dependency_links to proyecto_interfaces.egg-info/dependency_links.txt
+[0.435s] writing top-level names to proyecto_interfaces.egg-info/top_level.txt
+[0.439s] reading manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'
+[0.440s] writing manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'
+[0.489s] [100%] Built target ament_cmake_python_build_proyecto_interfaces_egg
+[0.501s] Invoked command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j8 -l8
+[0.596s] Invoking command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
+[0.611s] -- Install configuration: ""
+[0.611s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/rosidl_interfaces/proyecto_interfaces
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.h
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.h
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.c
+[0.612s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.h
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.h
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.h
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.h
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.h
+[0.613s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.h
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.h
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.c
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.h
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.h
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.c
+[0.614s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.h
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.h
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.h
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.c
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.h
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.h
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.sh
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.dsv
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_c.so
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.615s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_c.h
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_c.h
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_c.h
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_c.h
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.616s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.c
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_c.h
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.c
+[0.617s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_c.h
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.c
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_c.h
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_c.h
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.c
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_c.so
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_c.so
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.hpp
+[0.618s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__builder.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__traits.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__builder.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__builder.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__traits.hpp
+[0.619s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__traits.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__builder.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__traits.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.hpp
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/dds_fastrtps
+[0.620s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_cpp.hpp
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/dds_fastrtps
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_cpp.hpp
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_cpp.hpp
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_cpp.hpp
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces
+[0.621s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.cpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_cpp.hpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.cpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.cpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_cpp.hpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.cpp
+[0.622s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_cpp.hpp
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_cpp.hpp
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_cpp.so
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.sh
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.dsv
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info
+[0.623s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.623s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.623s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.623s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces
+[0.623s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_c.c
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/__init__.py
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/libproyecto_interfaces__rosidl_generator_py.so
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner.py
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/__init__.py
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner_s.c
+[0.624s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test_s.c
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test_s.c
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/__init__.py
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test.py
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test_s.c
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test.py
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test.py
+[0.625s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.667s] Listing '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces'...
+[0.668s] Listing '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg'...
+[0.668s] Listing '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv'...
+[0.676s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.678s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.679s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.679s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_py.so
+[0.679s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.idl
+[0.679s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.idl
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.idl
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.idl
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.msg
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.srv
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Request.msg
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Response.msg
+[0.680s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.srv
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Request.msg
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Response.msg
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.srv
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Request.msg
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Response.msg
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/package_run_dependencies/proyecto_interfaces
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/parent_prefix_path/proyecto_interfaces
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.sh
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.dsv
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.sh
+[0.681s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.dsv
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.bash
+[0.682s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.sh
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.zsh
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.dsv
+[0.682s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.dsv
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/packages/proyecto_interfaces
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport.cmake
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.682s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.683s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport.cmake
+[0.683s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.684s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cppExport.cmake
+[0.684s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.684s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.685s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.685s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.685s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport.cmake
+[0.685s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.685s] -- Old export file "/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport-noconfig.cmake].
+[0.685s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport.cmake
+[0.686s] -- Installing: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.686s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.686s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.686s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.686s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig-version.cmake
+[0.687s] -- Up-to-date: /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.xml
+[0.691s] Invoked command in '/home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/carlos/ProyectoRobotica/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
