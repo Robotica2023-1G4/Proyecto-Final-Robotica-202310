@@ -24,7 +24,7 @@ llamado = False
 #pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Inicializar la cámara
-captura = cv2.VideoCapture(0)
+#captura = cv2.VideoCapture(0)
 
 # Diccionario para almacenar las figuras detectadas
 figuras_detectadas = {}
@@ -54,9 +54,6 @@ class Perception_test(Node):
             #Declaración de nodos publicadores
             self.pub_carro_vel = self.create_publisher(Twist, '/car_vel', 10)
             self.pub_banner = self.create_publisher(Banner, 'vision/banner_group_'+str(4), 10)
-            self.pub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
-            self.bridge = CvBridge()
-            self.n = 0
             
     
             #Declaracion del servicio
@@ -66,11 +63,14 @@ class Perception_test(Node):
             periodo = 1
             self.timer = self.create_timer(periodo, self.movimiento_a_banner)
 
+            self.sub_video = self.create_subscription(Image, 'camara_topic',self.image_callback, 10)
+            self.bridge = CvBridge()
+            self.frame = 0
+            self.n = 0
+
     def image_callback(self, msg):
         try:
-            frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            self.vision_computadora(frame)
-            
+            self.frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
             # Aquí puedes procesar el marco de imagen de OpenCV según tus necesidades
             # ...
            
@@ -103,30 +103,70 @@ class Perception_test(Node):
             self.apagar_timer()
 
             #Se mueve hacia el inicio de la prueba
-            self.car_twist(1.0,0.0,0.0,1.0)
-            self.car_twist(1.0,0.0,0.0,1.0)
+            self.car_twist(1.0,0.0,0.0,1.1)
             self.car_twist(0.0,0.0,0.0,0.1)
+            time.sleep(3)
 
             #Se mueve hacia el banner 1
-            self.car_twist(0.0,0.0,1.0,1.0)
+            self.car_twist(0.0,0.0,-1.0,0.30)
+            self.car_twist(0.0,0.0,0.0,0.1)
+
+            time.sleep(5)
 
             #Revisa si debe hacer la prueba de vision
             if banner1 == 1 or banner2 == 1:
-                self.vision_computadora()
+                time.sleep(2)
+                frame1 = self.frame.copy()
+                figura, texto, color = self.vision_computadora(frame1)
+                banner1 = Banner()
+                banner1.figure = figura
+                banner1.word = texto
+                banner1.color = color
+                self.pub_banner.publish(banner1)
+                time.sleep(2)
             
             #Se mueve hacia el banner 2
-            self.car_twist(0.0,0.0,1.0,1.0)
+            self.car_twist(0.0,0.0,1.0,0.5)
+            self.car_twist(0.0,0.0,0.0,1.0)
+            self.car_twist(1.0,0.0,0.0,0.5)
+            self.car_twist(0.0,0.0,0.0,1.0)
+            self.car_twist(0.0,0.0,1.0,0.5)
+            self.car_twist(0.0,0.0,0.0,0.1)
+
+            time.sleep(5)
 
             #Revisa si debe hacer la prueba de vision
             if banner1 == 2 or banner2 == 2:
-                self.vision_computadora()
+                time.sleep(2)
+                frame2 = self.frame.copy()
+                figura, texto, color = self.vision_computadora(frame2)
+                banner2 = Banner()
+                banner2.figure = figura
+                banner2.word = texto
+                banner2.color = color
+                self.pub_banner.publish(banner2)
+                time.sleep(2)
 
             #Se mueve hacia el banner 3
-            self.car_twist(0.0,0.0,1.0,1.0)
+            self.car_twist(1.0,0.0,0.0,0.2)
+            self.car_twist(0.0,0.0,0.0,1.0)
+            self.car_twist(0.0,0.0,1.0,0.6)
+            self.car_twist(0.0,0.0,0.0,1.0)
+            self.car_twist(1.0,0.0,0.0,0.2)
+            self.car_twist(0.0,0.0,0.0,0.1)
+            time.sleep(5)
 
             #Revisa si debe hacer la prueba de vision
             if banner1 == 3 or banner2 == 3:
-                self.vision_computadora()
+                time.sleep(2)
+                frame3 = self.frame.copy()
+                figura, texto, color = self.vision_computadora(frame3)
+                banner3 = Banner()
+                banner3.figure = figura
+                banner3.word = texto
+                banner3.color = color
+                self.pub_banner.publish(banner3)
+                time.sleep(2)
 
     def vision_computadora(self, fotograma):
 
@@ -140,16 +180,15 @@ class Perception_test(Node):
         
         # Obtener la región de interés (ROI) del fotograma
         roi = fotograma[roi_y:roi_y+roi_height, roi_x:roi_x+roi_width]
-
-        
-
         
         # Detectar figuras geométricas y círculos en la región de interés
         roi_con_figuras,figura = self.detectar_figuras(roi, figuras_detectadas,self.n)
             
         self.n = figura
+
+        color = self.identificar_color(fotograma)[1]
             
-        print(self.identificar_color(fotograma)[1], self.n, texto)
+        print(color, self.n, texto)
             
         # Dibujar un rectángulo que representa la región de interés en el fotograma completo
         cv2.rectangle(fotograma, (roi_x, roi_y), (roi_x+roi_width, roi_y+roi_height), (0, 0, 255), 2)
@@ -157,6 +196,8 @@ class Perception_test(Node):
         # Mostrar el fotograma completo con la región de interés y las figuras detectadas
         cv2.imshow("Detección de figuras", fotograma)
         cv2.waitKey(1)
+
+        return figura, texto, color
 
         
 

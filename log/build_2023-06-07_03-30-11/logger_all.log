@@ -1,0 +1,241 @@
+[3.564s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.564s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb84545e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb8cf5a20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb8cf5a20>>)
+[3.892s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.893s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.894s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.895s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310'
+[3.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.897s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.897s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.898s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.898s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.898s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.899s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.899s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.992s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ignore', 'ignore_ament_install']
+[3.992s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore'
+[3.992s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ignore_ament_install'
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_pkg']
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_pkg'
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['colcon_meta']
+[3.993s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'colcon_meta'
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['ros']
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'ros'
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['cmake', 'python']
+[3.994s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'cmake'
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python'
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extensions ['python_setup_py']
+[3.995s] Level 1:colcon.colcon_core.package_identification:_identify(data) by extension 'python_setup_py'
+[3.996s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.996s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.996s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.998s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.998s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['ignore', 'ignore_ament_install']
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'ignore'
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'ignore_ament_install'
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['colcon_pkg']
+[4.000s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'colcon_pkg'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['colcon_meta']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'colcon_meta'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['ros']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'ros'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['cmake', 'python']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'cmake'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'python'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extensions ['python_setup_py']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws) by extension 'python_setup_py'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'ignore'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'ignore_ament_install'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['colcon_pkg']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'colcon_pkg'
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['colcon_meta']
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'colcon_meta'
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['ros']
+[4.005s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'ros'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['cmake', 'python']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'cmake'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'python'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extensions ['python_setup_py']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src) by extension 'python_setup_py'
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[4.007s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extension 'ignore'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extension 'ignore_ament_install'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extensions ['colcon_pkg']
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extension 'colcon_pkg'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extensions ['colcon_meta']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extension 'colcon_meta'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extensions ['ros']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_interfaces) by extension 'ros'
+[4.026s] DEBUG:colcon.colcon_core.package_identification:Package 'proyecto_final_ws/src/proyecto_interfaces' with type 'ros.ament_cmake' and name 'proyecto_interfaces'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extensions ['ignore', 'ignore_ament_install']
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extension 'ignore'
+[4.028s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extension 'ignore_ament_install'
+[4.029s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extensions ['colcon_pkg']
+[4.030s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extension 'colcon_pkg'
+[4.030s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extensions ['colcon_meta']
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extension 'colcon_meta'
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extensions ['ros']
+[4.031s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/proyecto_master_pkg) by extension 'ros'
+[4.036s] DEBUG:colcon.colcon_core.package_identification:Package 'proyecto_final_ws/src/proyecto_master_pkg' with type 'ros.ament_python' and name 'proyecto_master_pkg'
+[4.036s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[4.037s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'ignore'
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'ignore_ament_install'
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['colcon_pkg']
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'colcon_pkg'
+[4.038s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['colcon_meta']
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'colcon_meta'
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['ros']
+[4.039s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'ros'
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['cmake', 'python']
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'cmake'
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'python'
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extensions ['python_setup_py']
+[4.040s] Level 1:colcon.colcon_core.package_identification:_identify(proyecto_final_ws/src/vision_opencv) by extension 'python_setup_py'
+[4.041s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.041s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.041s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.041s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.042s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.242s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.271s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install
+[4.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[4.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.968s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_args' from command line to 'None'
+[4.968s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_target' from command line to 'None'
+[4.968s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[4.969s] Level 5:colcon.colcon_core.verb:set package 'proyecto_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.970s] DEBUG:colcon.colcon_core.verb:Building package 'proyecto_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces', 'merge_install': False, 'path': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_interfaces', 'symlink_install': False, 'test_result_base': None}
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_args' from command line to 'None'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_target' from command line to 'None'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[4.975s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[4.976s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[4.976s] Level 5:colcon.colcon_core.verb:set package 'proyecto_master_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.976s] DEBUG:colcon.colcon_core.verb:Building package 'proyecto_master_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg', 'merge_install': False, 'path': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg', 'symlink_install': False, 'test_result_base': None}
+[4.979s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.993s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.994s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_interfaces' with build type 'ament_cmake'
+[4.995s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_interfaces'
+[5.045s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.047s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.048s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.088s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg' with build type 'ament_python'
+[5.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_master_pkg', 'ament_prefix_path')
+[5.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/ament_prefix_path.ps1'
+[5.110s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/ament_prefix_path.dsv'
+[5.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/ament_prefix_path.sh'
+[5.142s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.143s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg:/opt/ros/humble /usr/bin/cmake --build /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j4 -l4
+[7.497s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg'
+[7.506s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.506s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg:/opt/ros/humble /usr/bin/cmake --build /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces -- -j4 -l4
+[10.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg:/opt/ros/humble /usr/bin/cmake --install /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
+[10.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg': PYTHONPATH=/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/prefix_override:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/proyecto_master_pkg build --build-base /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build install --record /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
+[10.724s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proyecto_interfaces)
+[10.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg:/opt/ros/humble /usr/bin/cmake --install /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces
+[10.812s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces' for CMake module files
+[10.818s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces' for CMake config files
+[10.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_interfaces', 'cmake_prefix_path')
+[10.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.ps1'
+[10.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.dsv'
+[10.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.sh'
+[10.844s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib'
+[10.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_interfaces', 'ld_library_path_lib')
+[10.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.ps1'
+[10.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.dsv'
+[10.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.sh'
+[10.859s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/bin'
+[10.860s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/pkgconfig/proyecto_interfaces.pc'
+[10.861s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/python3.10/site-packages'
+[10.863s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/bin'
+[10.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.ps1'
+[10.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.dsv'
+[10.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.sh'
+[10.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.bash'
+[10.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.zsh'
+[10.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/colcon-core/packages/proyecto_interfaces)
+[11.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proyecto_interfaces)
+[11.841s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces' for CMake module files
+[11.847s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces' for CMake config files
+[11.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_interfaces', 'cmake_prefix_path')
+[11.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.ps1'
+[11.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.dsv'
+[11.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/cmake_prefix_path.sh'
+[11.868s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib'
+[11.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_interfaces', 'ld_library_path_lib')
+[11.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.ps1'
+[11.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.dsv'
+[11.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/hook/ld_library_path_lib.sh'
+[11.884s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/bin'
+[11.885s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/pkgconfig/proyecto_interfaces.pc'
+[11.886s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/python3.10/site-packages'
+[11.888s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/bin'
+[11.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.ps1'
+[11.918s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.dsv'
+[11.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.sh'
+[11.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.bash'
+[11.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.zsh'
+[11.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/colcon-core/packages/proyecto_interfaces)
+[12.069s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg' for CMake module files
+[12.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg' returned '0': PYTHONPATH=/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/prefix_override:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/proyecto_master_pkg build --build-base /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build install --record /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log --install-scripts $base/lib/proyecto_master_pkg --single-version-externally-managed
+[12.075s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg' for CMake config files
+[12.081s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib'
+[12.082s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/bin'
+[12.082s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/pkgconfig/proyecto_master_pkg.pc'
+[12.083s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages'
+[12.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('proyecto_master_pkg', 'pythonpath')
+[12.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/pythonpath.ps1'
+[12.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/pythonpath.dsv'
+[12.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/hook/pythonpath.sh'
+[12.098s] Level 1:colcon.colcon_core.environment:checking '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/bin'
+[12.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proyecto_master_pkg)
+[12.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/package.ps1'
+[12.108s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/package.dsv'
+[12.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/package.sh'
+[12.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/package.bash'
+[12.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/proyecto_master_pkg/package.zsh'
+[12.122s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/share/colcon-core/packages/proyecto_master_pkg)
+[12.123s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.128s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.129s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.131s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.207s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.208s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.319s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.327s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/local_setup.ps1'
+[12.335s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/_local_setup_util_ps1.py'
+[12.348s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/setup.ps1'
+[12.362s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/local_setup.sh'
+[12.369s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/_local_setup_util_sh.py'
+[12.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/setup.sh'
+[12.386s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/local_setup.bash'
+[12.392s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/setup.bash'
+[12.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/local_setup.zsh'
+[12.409s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/setup.zsh'

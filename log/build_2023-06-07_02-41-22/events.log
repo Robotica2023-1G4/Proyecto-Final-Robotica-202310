@@ -1,0 +1,478 @@
+[0.000000] (-) TimerEvent: {}
+[0.006708] (proyecto_interfaces) JobQueued: {'identifier': 'proyecto_interfaces', 'dependencies': OrderedDict()}
+[0.007982] (proyecto_master_pkg) JobQueued: {'identifier': 'proyecto_master_pkg', 'dependencies': OrderedDict()}
+[0.014808] (proyecto_interfaces) JobStarted: {'identifier': 'proyecto_interfaces'}
+[0.101144] (-) TimerEvent: {}
+[0.214856] (proyecto_master_pkg) JobStarted: {'identifier': 'proyecto_master_pkg'}
+[0.216136] (-) TimerEvent: {}
+[0.323917] (-) TimerEvent: {}
+[0.380010] (proyecto_interfaces) JobProgress: {'identifier': 'proyecto_interfaces', 'progress': 'cmake'}
+[0.424687] (-) TimerEvent: {}
+[0.455308] (proyecto_interfaces) JobProgress: {'identifier': 'proyecto_interfaces', 'progress': 'build'}
+[0.463218] (proyecto_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es_CO:es'), ('USER', 'abmodelo2023'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abmodelo2023'), ('OLDPWD', '/home/abmodelo2023'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1790'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'abmodelo2023'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abmodelo2023'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/abmodelo2023/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abmodelo2023:@/tmp/.ICE-unix/1740,unix/abmodelo2023:/tmp/.ICE-unix/1740'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cd861c79_d3e1_4c71_a65e_8982752b78d2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_CO.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W93751'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.526623] (-) TimerEvent: {}
+[0.635604] (-) TimerEvent: {}
+[0.737385] (-) TimerEvent: {}
+[0.838695] (-) TimerEvent: {}
+[0.942734] (-) TimerEvent: {}
+[1.045908] (-) TimerEvent: {}
+[1.155185] (-) TimerEvent: {}
+[1.257047] (-) TimerEvent: {}
+[1.365710] (-) TimerEvent: {}
+[1.471716] (-) TimerEvent: {}
+[1.575213] (-) TimerEvent: {}
+[1.680814] (-) TimerEvent: {}
+[1.782236] (-) TimerEvent: {}
+[1.883668] (-) TimerEvent: {}
+[1.985931] (-) TimerEvent: {}
+[2.092469] (-) TimerEvent: {}
+[2.195717] (-) TimerEvent: {}
+[2.297702] (-) TimerEvent: {}
+[2.399367] (-) TimerEvent: {}
+[2.500491] (-) TimerEvent: {}
+[2.602434] (-) TimerEvent: {}
+[2.706484] (-) TimerEvent: {}
+[2.807854] (-) TimerEvent: {}
+[2.910557] (-) TimerEvent: {}
+[3.019424] (-) TimerEvent: {}
+[3.123917] (-) TimerEvent: {}
+[3.236667] (-) TimerEvent: {}
+[3.339826] (-) TimerEvent: {}
+[3.444829] (-) TimerEvent: {}
+[3.547475] (-) TimerEvent: {}
+[3.655724] (-) TimerEvent: {}
+[3.764039] (-) TimerEvent: {}
+[3.866861] (-) TimerEvent: {}
+[3.969644] (-) TimerEvent: {}
+[4.075714] (-) TimerEvent: {}
+[4.154222] (proyecto_interfaces) StdoutLine: {'line': b'[  1%] Built target proyecto_interfaces__cpp\n'}
+[4.176145] (-) TimerEvent: {}
+[4.278227] (-) TimerEvent: {}
+[4.401524] (-) TimerEvent: {}
+[4.510737] (-) TimerEvent: {}
+[4.615369] (-) TimerEvent: {}
+[4.717159] (-) TimerEvent: {}
+[4.820969] (-) TimerEvent: {}
+[4.926716] (-) TimerEvent: {}
+[4.973612] (proyecto_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_proyecto_interfaces\n'}
+[5.027351] (-) TimerEvent: {}
+[5.129714] (-) TimerEvent: {}
+[5.231849] (-) TimerEvent: {}
+[5.334040] (-) TimerEvent: {}
+[5.436387] (-) TimerEvent: {}
+[5.545552] (-) TimerEvent: {}
+[5.572517] (proyecto_interfaces) StdoutLine: {'line': b'[ 12%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[5.646132] (-) TimerEvent: {}
+[5.749366] (-) TimerEvent: {}
+[5.850673] (-) TimerEvent: {}
+[5.955681] (-) TimerEvent: {}
+[6.042075] (proyecto_interfaces) StdoutLine: {'line': b'[ 23%] Built target proyecto_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.055987] (-) TimerEvent: {}
+[6.158093] (-) TimerEvent: {}
+[6.260004] (-) TimerEvent: {}
+[6.362049] (-) TimerEvent: {}
+[6.468577] (-) TimerEvent: {}
+[6.575625] (-) TimerEvent: {}
+[6.684721] (-) TimerEvent: {}
+[6.790867] (-) TimerEvent: {}
+[6.893798] (-) TimerEvent: {}
+[6.997400] (-) TimerEvent: {}
+[7.104841] (-) TimerEvent: {}
+[7.206577] (-) TimerEvent: {}
+[7.309698] (-) TimerEvent: {}
+[7.420792] (-) TimerEvent: {}
+[7.527713] (-) TimerEvent: {}
+[7.636034] (-) TimerEvent: {}
+[7.744181] (-) TimerEvent: {}
+[7.848918] (-) TimerEvent: {}
+[7.952414] (-) TimerEvent: {}
+[8.055668] (-) TimerEvent: {}
+[8.159886] (-) TimerEvent: {}
+[8.263682] (-) TimerEvent: {}
+[8.367374] (-) TimerEvent: {}
+[8.472566] (-) TimerEvent: {}
+[8.584281] (-) TimerEvent: {}
+[8.695603] (-) TimerEvent: {}
+[8.800084] (-) TimerEvent: {}
+[8.908095] (-) TimerEvent: {}
+[9.010213] (-) TimerEvent: {}
+[9.112866] (-) TimerEvent: {}
+[9.228017] (-) TimerEvent: {}
+[9.330814] (-) TimerEvent: {}
+[9.448024] (-) TimerEvent: {}
+[9.557192] (-) TimerEvent: {}
+[9.659314] (-) TimerEvent: {}
+[9.763907] (-) TimerEvent: {}
+[9.888211] (-) TimerEvent: {}
+[10.016241] (-) TimerEvent: {}
+[10.119676] (-) TimerEvent: {}
+[10.222850] (-) TimerEvent: {}
+[10.339634] (-) TimerEvent: {}
+[10.443775] (-) TimerEvent: {}
+[10.545217] (-) TimerEvent: {}
+[10.647997] (-) TimerEvent: {}
+[10.755596] (-) TimerEvent: {}
+[10.856726] (-) TimerEvent: {}
+[10.963084] (-) TimerEvent: {}
+[11.071846] (-) TimerEvent: {}
+[11.175803] (-) TimerEvent: {}
+[11.280007] (-) TimerEvent: {}
+[11.388080] (-) TimerEvent: {}
+[11.494395] (-) TimerEvent: {}
+[11.597579] (-) TimerEvent: {}
+[11.701649] (-) TimerEvent: {}
+[11.804013] (-) TimerEvent: {}
+[11.906687] (-) TimerEvent: {}
+[12.008297] (-) TimerEvent: {}
+[12.111491] (-) TimerEvent: {}
+[12.213767] (-) TimerEvent: {}
+[12.317710] (-) TimerEvent: {}
+[12.419676] (-) TimerEvent: {}
+[12.522205] (-) TimerEvent: {}
+[12.625435] (-) TimerEvent: {}
+[12.727817] (-) TimerEvent: {}
+[12.769969] (proyecto_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[12.779993] (proyecto_interfaces) StdoutLine: {'line': b'writing proyecto_interfaces.egg-info/PKG-INFO\n'}
+[12.783025] (proyecto_interfaces) StdoutLine: {'line': b'writing dependency_links to proyecto_interfaces.egg-info/dependency_links.txt\n'}
+[12.788080] (proyecto_interfaces) StdoutLine: {'line': b'writing top-level names to proyecto_interfaces.egg-info/top_level.txt\n'}
+[12.828135] (-) TimerEvent: {}
+[12.842175] (proyecto_interfaces) StdoutLine: {'line': b"reading manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'\n"}
+[12.854876] (proyecto_interfaces) StdoutLine: {'line': b"writing manifest file 'proyecto_interfaces.egg-info/SOURCES.txt'\n"}
+[12.932182] (-) TimerEvent: {}
+[13.039541] (-) TimerEvent: {}
+[13.147805] (-) TimerEvent: {}
+[13.250622] (-) TimerEvent: {}
+[13.341697] (proyecto_interfaces) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_proyecto_interfaces_egg\n'}
+[13.351020] (-) TimerEvent: {}
+[13.452417] (-) TimerEvent: {}
+[13.554040] (-) TimerEvent: {}
+[13.605518] (proyecto_interfaces) StdoutLine: {'line': b'[ 34%] Built target proyecto_interfaces__rosidl_typesupport_cpp\n'}
+[13.654638] (-) TimerEvent: {}
+[13.758055] (-) TimerEvent: {}
+[13.863760] (proyecto_interfaces) StdoutLine: {'line': b'[ 45%] Built target proyecto_interfaces__rosidl_generator_c\n'}
+[13.864869] (-) TimerEvent: {}
+[13.971661] (-) TimerEvent: {}
+[14.075745] (-) TimerEvent: {}
+[14.121357] (proyecto_interfaces) StdoutLine: {'line': b'[ 56%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[14.176533] (-) TimerEvent: {}
+[14.279644] (-) TimerEvent: {}
+[14.383718] (-) TimerEvent: {}
+[14.452166] (proyecto_interfaces) StdoutLine: {'line': b'[ 67%] Built target proyecto_interfaces__rosidl_typesupport_c\n'}
+[14.487693] (-) TimerEvent: {}
+[14.588641] (-) TimerEvent: {}
+[14.769544] (-) TimerEvent: {}
+[14.868386] (proyecto_interfaces) StdoutLine: {'line': b'[ 78%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c\n'}
+[14.869737] (-) TimerEvent: {}
+[14.971556] (-) TimerEvent: {}
+[15.053500] (proyecto_interfaces) StdoutLine: {'line': b'[ 78%] Built target proyecto_interfaces\n'}
+[15.071688] (-) TimerEvent: {}
+[15.175795] (-) TimerEvent: {}
+[15.279945] (-) TimerEvent: {}
+[15.361245] (proyecto_interfaces) StdoutLine: {'line': b'[ 80%] Built target proyecto_interfaces__py\n'}
+[15.380202] (-) TimerEvent: {}
+[15.482023] (-) TimerEvent: {}
+[15.582927] (-) TimerEvent: {}
+[15.644409] (proyecto_interfaces) StdoutLine: {'line': b'[ 89%] Built target proyecto_interfaces__rosidl_generator_py\n'}
+[15.683294] (-) TimerEvent: {}
+[15.791665] (-) TimerEvent: {}
+[15.892769] (-) TimerEvent: {}
+[15.935960] (proyecto_interfaces) StdoutLine: {'line': b'[ 92%] Built target proyecto_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.993248] (-) TimerEvent: {}
+[16.095295] (-) TimerEvent: {}
+[16.199634] (-) TimerEvent: {}
+[16.240549] (proyecto_interfaces) StdoutLine: {'line': b'[ 96%] Built target proyecto_interfaces__rosidl_typesupport_c__pyext\n'}
+[16.300055] (-) TimerEvent: {}
+[16.408538] (-) TimerEvent: {}
+[16.466509] (proyecto_interfaces) StdoutLine: {'line': b'[100%] Built target proyecto_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[16.497178] (proyecto_master_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/proyecto_master_pkg', 'build', '--build-base', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build', 'install', '--record', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log', '--install-scripts', '$base/lib/proyecto_master_pkg', '--single-version-externally-managed'], 'cwd': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/proyecto_final_ws/src/proyecto_master_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'es_CO:es', 'USER': 'abmodelo2023', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/abmodelo2023', 'OLDPWD': '/home/abmodelo2023', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1790', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'abmodelo2023', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'abmodelo2023', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/abmodelo2023/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/abmodelo2023:@/tmp/.ICE-unix/1740,unix/abmodelo2023:/tmp/.ICE-unix/1740', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cd861c79_d3e1_4c71_a65e_8982752b78d2', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_CO.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W93751', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '5', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/prefix_override:/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[16.538758] (-) TimerEvent: {}
+[16.608637] (proyecto_interfaces) CommandEnded: {'returncode': 0}
+[16.643025] (-) TimerEvent: {}
+[16.745827] (-) TimerEvent: {}
+[16.847587] (-) TimerEvent: {}
+[16.948656] (-) TimerEvent: {}
+[17.049614] (-) TimerEvent: {}
+[17.151636] (-) TimerEvent: {}
+[17.253931] (-) TimerEvent: {}
+[17.355552] (-) TimerEvent: {}
+[17.458385] (-) TimerEvent: {}
+[17.561162] (-) TimerEvent: {}
+[17.663539] (-) TimerEvent: {}
+[17.765610] (-) TimerEvent: {}
+[17.867796] (-) TimerEvent: {}
+[17.969429] (-) TimerEvent: {}
+[18.072014] (-) TimerEvent: {}
+[18.173029] (-) TimerEvent: {}
+[18.274161] (-) TimerEvent: {}
+[18.376064] (-) TimerEvent: {}
+[18.477852] (-) TimerEvent: {}
+[18.578790] (-) TimerEvent: {}
+[18.680539] (-) TimerEvent: {}
+[18.781636] (proyecto_interfaces) JobProgress: {'identifier': 'proyecto_interfaces', 'progress': 'install'}
+[18.781956] (-) TimerEvent: {}
+[18.859862] (proyecto_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces'], 'cwd': '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es_CO:es'), ('USER', 'abmodelo2023'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abmodelo2023'), ('OLDPWD', '/home/abmodelo2023'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1790'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'abmodelo2023'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abmodelo2023'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/abmodelo2023/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abmodelo2023:@/tmp/.ICE-unix/1740,unix/abmodelo2023:/tmp/.ICE-unix/1740'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cd861c79_d3e1_4c71_a65e_8982752b78d2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_CO.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W93751'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.884683] (-) TimerEvent: {}
+[18.967783] (proyecto_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.974749] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/rosidl_interfaces/proyecto_interfaces\n'}
+[18.979980] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[18.980803] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[18.981536] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.h\n'}
+[18.982341] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[18.984295] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.c\n'}
+[18.988734] (-) TimerEvent: {}
+[18.997150] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.h\n'}
+[18.998286] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.h\n'}
+[18.999027] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.c\n'}
+[19.000005] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.h\n'}
+[19.002055] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.h\n'}
+[19.012061] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.h\n'}
+[19.012907] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.h\n'}
+[19.013627] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.h\n'}
+[19.014228] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__functions.c\n'}
+[19.014998] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__functions.h\n'}
+[19.029123] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__functions.h\n'}
+[19.030090] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.h\n'}
+[19.030569] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.h\n'}
+[19.039151] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.040395] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.040937] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.h\n'}
+[19.041743] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.h\n'}
+[19.042741] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.c\n'}
+[19.043512] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__functions.h\n'}
+[19.044358] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[19.045899] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.h\n'}
+[19.047198] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.sh\n'}
+[19.047764] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/library_path.dsv\n'}
+[19.048350] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_c.so\n'}
+[19.049489] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[19.050218] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[19.051319] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[19.052303] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_c.h\n'}
+[19.053092] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_c.h\n'}
+[19.054165] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_c.h\n'}
+[19.054775] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.055311] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.056138] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_c.h\n'}
+[19.056731] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[19.058292] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[19.059715] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[19.061045] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[19.061845] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[19.063483] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_c.h\n'}
+[19.064872] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.c\n'}
+[19.066573] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_c.h\n'}
+[19.067916] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.c\n'}
+[19.068951] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_c.h\n'}
+[19.070143] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.c\n'}
+[19.071045] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.071988] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.072847] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.c\n'}
+[19.073744] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_c.h\n'}
+[19.076572] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[19.085329] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[19.087609] (-) TimerEvent: {}
+[19.091004] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_c.so\n'}
+[19.093060] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[19.100933] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[19.101947] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[19.103106] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__traits.hpp\n'}
+[19.103947] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__struct.hpp\n'}
+[19.105207] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__builder.hpp\n'}
+[19.106032] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__traits.hpp\n'}
+[19.107017] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__builder.hpp\n'}
+[19.108354] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__struct.hpp\n'}
+[19.109082] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__struct.hpp\n'}
+[19.109965] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__traits.hpp\n'}
+[19.110697] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__builder.hpp\n'}
+[19.122402] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_perception_test.hpp\n'}
+[19.132153] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_manipulation_test.hpp\n'}
+[19.132961] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/start_navigation_test.hpp\n'}
+[19.134444] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.138100] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/banner.hpp\n'}
+[19.140499] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.141987] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__struct.hpp\n'}
+[19.146580] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__traits.hpp\n'}
+[19.148631] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__builder.hpp\n'}
+[19.149811] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[19.150999] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[19.152110] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[19.152968] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/dds_fastrtps\n'}
+[19.153840] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.154834] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.155774] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.156762] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.157789] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.158816] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/dds_fastrtps\n'}
+[19.172873] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.182128] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[19.182885] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[19.183547] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces\n'}
+[19.184435] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv\n'}
+[19.185160] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail\n'}
+[19.186478] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__type_support.cpp\n'}
+[19.187348] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__type_support.cpp\n'}
+[19.188187] (-) TimerEvent: {}
+[19.190980] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.204129] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_perception_test__type_support.cpp\n'}
+[19.204852] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_manipulation_test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.205528] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/srv/detail/start_navigation_test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.206297] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg\n'}
+[19.206990] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail\n'}
+[19.207823] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.208603] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/include/proyecto_interfaces/proyecto_interfaces/msg/detail/banner__type_support.cpp\n'}
+[19.209479] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[19.210339] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_typesupport_cpp.so\n'}
+[19.220611] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.sh\n'}
+[19.222730] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/pythonpath.dsv\n'}
+[19.227633] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info\n'}
+[19.235591] (proyecto_interfaces) StdoutLine: {'line': b'-- Installing: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[19.236385] (proyecto_interfaces) StdoutLine: {'line': b'-- Installing: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[19.237728] (proyecto_interfaces) StdoutLine: {'line': b'-- Installing: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[19.240377] (proyecto_interfaces) StdoutLine: {'line': b'-- Installing: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[19.243150] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces\n'}
+[19.245665] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.247155] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.252531] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/__init__.py\n'}
+[19.253228] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[19.253712] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/libproyecto_interfaces__rosidl_generator_py.so\n'}
+[19.254234] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv\n'}
+[19.261559] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test.py\n'}
+[19.262546] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test_s.c\n'}
+[19.268115] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/__init__.py\n'}
+[19.268798] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test_s.c\n'}
+[19.269660] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_perception_test.py\n'}
+[19.270397] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_manipulation_test.py\n'}
+[19.271207] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv/_start_navigation_test_s.c\n'}
+[19.272513] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[19.273242] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg\n'}
+[19.273918] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner_s.c\n'}
+[19.274599] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/_banner.py\n'}
+[19.275365] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg/__init__.py\n'}
+[19.276239] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.276972] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/_proyecto_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[19.288585] (-) TimerEvent: {}
+[19.393336] (-) TimerEvent: {}
+[19.494366] (-) TimerEvent: {}
+[19.595323] (-) TimerEvent: {}
+[19.654083] (proyecto_master_pkg) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[19.655050] (proyecto_master_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[19.695727] (-) TimerEvent: {}
+[19.718491] (proyecto_interfaces) StdoutLine: {'line': b"Listing '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces'...\n"}
+[19.720401] (proyecto_interfaces) StdoutLine: {'line': b"Listing '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/msg'...\n"}
+[19.721721] (proyecto_interfaces) StdoutLine: {'line': b"Listing '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/srv'...\n"}
+[19.732854] (proyecto_master_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[19.741124] (proyecto_master_pkg) StdoutLine: {'line': b'writing ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/PKG-INFO\n'}
+[19.750094] (proyecto_master_pkg) StdoutLine: {'line': b'writing dependency_links to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/dependency_links.txt\n'}
+[19.757788] (proyecto_master_pkg) StdoutLine: {'line': b'writing entry points to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/entry_points.txt\n'}
+[19.760778] (proyecto_master_pkg) StdoutLine: {'line': b'writing requirements to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/requires.txt\n'}
+[19.773802] (proyecto_master_pkg) StdoutLine: {'line': b'writing top-level names to ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/top_level.txt\n'}
+[19.795941] (-) TimerEvent: {}
+[19.897201] (-) TimerEvent: {}
+[19.917698] (proyecto_master_pkg) StdoutLine: {'line': b"reading manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'\n"}
+[19.964655] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.965915] (proyecto_master_pkg) StdoutLine: {'line': b"writing manifest file '../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info/SOURCES.txt'\n"}
+[19.972063] (proyecto_master_pkg) StdoutLine: {'line': b'running build\n'}
+[19.973070] (proyecto_master_pkg) StdoutLine: {'line': b'running build_py\n'}
+[19.974226] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.979505] (proyecto_master_pkg) StdoutLine: {'line': b'copying proyecto_master_pkg/perception_test.py -> /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg\n'}
+[19.981502] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/local/lib/python3.10/dist-packages/proyecto_interfaces/proyecto_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.984872] (proyecto_master_pkg) StdoutLine: {'line': b'running install\n'}
+[19.990353] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/lib/libproyecto_interfaces__rosidl_generator_py.so\n'}
+[19.991578] (proyecto_master_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[19.992928] (proyecto_master_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[19.993646] (proyecto_master_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[19.994822] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.idl\n'}
+[19.998313] (-) TimerEvent: {}
+[20.004088] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.idl\n'}
+[20.005259] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.idl\n'}
+[20.010135] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.idl\n'}
+[20.016667] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/msg/Banner.msg\n'}
+[20.017432] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest.srv\n'}
+[20.018166] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Request.msg\n'}
+[20.019032] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartNavigationTest_Response.msg\n'}
+[20.022183] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest.srv\n'}
+[20.037447] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Request.msg\n'}
+[20.039055] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartPerceptionTest_Response.msg\n'}
+[20.048850] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest.srv\n'}
+[20.059178] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Request.msg\n'}
+[20.060544] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/srv/StartManipulationTest_Response.msg\n'}
+[20.069728] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/package_run_dependencies/proyecto_interfaces\n'}
+[20.078133] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/parent_prefix_path/proyecto_interfaces\n'}
+[20.079361] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.sh\n'}
+[20.080433] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/ament_prefix_path.dsv\n'}
+[20.081644] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.sh\n'}
+[20.083210] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/environment/path.dsv\n'}
+[20.084563] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.bash\n'}
+[20.085249] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.sh\n'}
+[20.085896] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.zsh\n'}
+[20.086530] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/local_setup.dsv\n'}
+[20.087175] (proyecto_interfaces) StdoutLine: {'line': b'-- Installing: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.dsv\n'}
+[20.087961] (proyecto_master_pkg) StdoutLine: {'line': b'copying /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/build/lib/proyecto_master_pkg/perception_test.py -> /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg\n'}
+[20.088897] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/ament_index/resource_index/packages/proyecto_interfaces\n'}
+[20.089682] (proyecto_master_pkg) StdoutLine: {'line': b'byte-compiling /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg/perception_test.py to perception_test.cpython-310.pyc\n'}
+[20.090767] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport.cmake\n'}
+[20.106886] (-) TimerEvent: {}
+[20.115939] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.116851] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.117540] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.119320] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.120502] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.131966] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[20.133021] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.141262] (proyecto_master_pkg) StdoutLine: {'line': b'running install_data\n'}
+[20.147777] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_cppExport.cmake\n'}
+[20.159454] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.160338] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.166018] (proyecto_master_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.171338] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.172620] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.176782] (proyecto_master_pkg) StdoutLine: {'line': b"removing '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[20.179772] (proyecto_master_pkg) StdoutLine: {'line': b'Copying ../../../build/proyecto_master_pkg/proyecto_master_pkg.egg-info to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/python3.10/site-packages/proyecto_master_pkg-0.0.0-py3.10.egg-info\n'}
+[20.188164] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[20.189083] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.197462] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport.cmake\n'}
+[20.201438] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/export_proyecto_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.202781] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[20.206443] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.209928] (-) TimerEvent: {}
+[20.216947] (proyecto_master_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[20.217845] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.218557] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.219224] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.229465] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.232476] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.235481] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig.cmake\n'}
+[20.236417] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/cmake/proyecto_interfacesConfig-version.cmake\n'}
+[20.237265] (proyecto_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_interfaces/share/proyecto_interfaces/package.xml\n'}
+[20.307621] (proyecto_interfaces) CommandEnded: {'returncode': 0}
+[20.311634] (-) TimerEvent: {}
+[20.412774] (-) TimerEvent: {}
+[20.462566] (proyecto_master_pkg) StdoutLine: {'line': b'Installing camara script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.473970] (proyecto_master_pkg) StdoutLine: {'line': b'Installing control script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.475642] (proyecto_master_pkg) StdoutLine: {'line': b'Installing manipulation script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.477154] (proyecto_master_pkg) StdoutLine: {'line': b'Installing master script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.478232] (proyecto_master_pkg) StdoutLine: {'line': b'Installing navigation script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.483459] (proyecto_master_pkg) StdoutLine: {'line': b'Installing perception script to /home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/install/proyecto_master_pkg/lib/proyecto_master_pkg\n'}
+[20.484301] (proyecto_master_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/abmodelo2023/Documentos/Proyecto-Final-Robotica-202310/build/proyecto_master_pkg/install.log'\n"}
+[20.513104] (-) TimerEvent: {}
+[20.615040] (-) TimerEvent: {}
+[20.717306] (-) TimerEvent: {}
+[20.798525] (proyecto_master_pkg) CommandEnded: {'returncode': 0}
+[20.827714] (-) TimerEvent: {}
+[20.932473] (-) TimerEvent: {}
+[20.942908] (proyecto_master_pkg) JobEnded: {'identifier': 'proyecto_master_pkg', 'rc': 0}
+[21.032704] (-) TimerEvent: {}
+[21.133880] (-) TimerEvent: {}
+[21.239220] (-) TimerEvent: {}
+[21.340197] (-) TimerEvent: {}
+[21.441708] (-) TimerEvent: {}
+[21.542613] (-) TimerEvent: {}
+[21.644295] (-) TimerEvent: {}
+[21.745493] (-) TimerEvent: {}
+[21.846888] (-) TimerEvent: {}
+[21.948628] (-) TimerEvent: {}
+[22.050801] (-) TimerEvent: {}
+[22.154571] (-) TimerEvent: {}
+[22.249646] (proyecto_interfaces) JobEnded: {'identifier': 'proyecto_interfaces', 'rc': 0}
+[22.254882] (-) TimerEvent: {}
+[22.262438] (-) EventReactorShutdown: {}
