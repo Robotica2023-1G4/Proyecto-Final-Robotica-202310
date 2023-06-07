@@ -68,80 +68,89 @@ class Navigation_test(Node):
         #Se revisa si se llamo
         if llamado == True:
 
-            d=20 # Span de pepe en centimetros
-            r=10 # parametro de salto entre vecinos (pixeles)
+            d=20 
+            r=10 
     
-            d=round(round(d*4)/2)  #mitad del span de pepe en pixeles
-    
-            gscore=np.full((len(mapa), len(mapa[0])), np.inf)
-            fscore=np.full((len(mapa), len(mapa[0])), np.inf) 
-
-            posInicial = self.cm_to_pix(posInicial)
-            posFinal = self.cm_to_pix(posFinal)
-            gscore[posInicial[1]][posInicial[0]]=0
-            fscore[posInicial[1]][posInicial[0]]=self.h(posInicial, posFinal)
-
-    
+            gscore=np.full((len(img), len(img[0])), np.inf)
+            fscore=np.full((len(img), len(img[0])), np.inf)
+                
+                
+            pos0=self.cm_to_pix(pos0)# punto inicial en pixeles
+            posf=self.cm_to_pix(posf)# punto final en pixeles
+                
+            gscore[pos0[1]][pos0[0]]=0
+            fscore[pos0[1]][pos0[0]]=self.h(pos0, posf)
+                
             open=PriorityQueue()
-            open.put((self.h(posInicial, posFinal),self.h(posInicial, posFinal),posInicial))
+            open.put((h(pos0, posf),self.h(pos0, posf),pos0))
             aPath={}
-
-
+                
+                
+                
             while not open.empty():
-        
-                currPix=open.get()[2]
-
                     
-                if currPix[0] in range(posFinal[0]-r,posFinal[0]+r) and currPix[1] in range(posFinal[1]-r,posFinal[1]+r):
-                    posFinal=currPix
+                currPix=open.get()[2]
+                    
+                if currPix[0] in range(posf[0]-r,posf[0]+r) and currPix[1] in range(posf[1]-r,posf[1]+r):
+                #if currPix==posf:
+                    posf=currPix
                     break
                     
                     
-                #nodos vecindad
+                    #nodos vecindad
                 izq=(currPix[0]-r,currPix[1])
                 der=(currPix[0]+r,currPix[1])
                 sup=(currPix[0],currPix[1]+r)
                 inf=(currPix[0],currPix[1]-r)
                     
                 vecinos=[izq,der,sup,inf]
-                print(vecinos)
                     
                 for vecino in vecinos:
                         
-                    #revision de celdas libres y tamano
+                        #revision de celdas libres y tamano del Pepe
                     available=True
                     for i in range(vecino[1]-d,vecino[1]+d):
                         for j in range(vecino[0]-d,vecino[0]+d):
-                            if mapa[i][j][0]==94:
+                            if img[i][j][0]==94:
                                 available=False
 
                                 
-                    # analisis fscore y gscore
+                        # analisis fscore y gscore
                     if available==True:
                         temp_gscore=gscore[currPix[1]][currPix[0]]+1
-                        print(temp_gscore)
-                        temp_fscore=self.h(vecino,posFinal)+temp_gscore
+                        temp_fscore=h(vecino,posf)+temp_gscore
                         if temp_fscore<fscore[vecino[1]][vecino[0]]:
                             fscore[vecino[1]][vecino[0]]=temp_fscore
                             gscore[vecino[1]][vecino[0]]=temp_gscore
-                            open.put((temp_fscore,self.h(vecino,posFinal),vecino))
+                            open.put((temp_fscore,self.h(vecino,posf),vecino))
+                                # print(open.get())
+                                # print(open.empty())
                             aPath[vecino]=currPix
+                            
 
-            #Se crea el camino
-            cell = posFinal
-            print(cell)
-            path=[cell]
-            while cell!=posFinal:
+
+            cell=posf
+            path=[cell] #lista que guarda el Path_cm de forma inversa
+            while cell!=pos0:
                 path.append(aPath[cell])
                 cell=aPath[cell]
+                
             path.reverse()
 
-            #Se imprime el camino
-            print("El camino es: ")
-            print(path)
+            # Conversion factor from pixels to centimeters
+            conversion_factor = 400 / 100
 
-            for val in path:
-                mapa=self.draw(val,mapa,d)
+            # Convert the coordinates in Path to centimeters
+            Path_cm = [(point[0] / conversion_factor, point[1] / conversion_factor) for point in path]
+
+            # Print the coordinates in centimeters
+            for point in Path_cm:
+                print(point)
+
+            #Se imprime el camino
+            for value in path:
+                img=self.draw(value,img,18)
+
 
             #Se muestra el mapa
             cv2.imshow("Mapa",mapa)
@@ -177,7 +186,7 @@ class Navigation_test(Node):
             self.movimiento_camino(distancias)
 
 
-    def draw(self,pos,img,d):
+    def draw(pos,img,d):
         #conversion a pixeles
         d=round(round(d*4)/2)
         
@@ -249,6 +258,8 @@ def main(args=None):
 if __name__ == '__main__':
 
     main()
+
+
 
 
     
